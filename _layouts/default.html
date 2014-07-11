@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width">
+   
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ "/css/screen.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/font-awesome.min.css" | prepend: site.baseurl }}">
+</head>
+<body class="{% if page.url == '/' %} home {% else %} {{page.url | first }} {% endif %}">
+
+<a href="#" class="site-phone clearfix">
+  <i class="fa fa-phone fa-lg"></i>
+  my phone
+</a>
+
+  <script src="{{"/js/jquery-1.8.3.min.js" | prepand: site.baseurl }}"></script>
+  <script src="{{"/js/functions.js" | prepand: site.baseurl}}"></script>
+</body>
+</html>
