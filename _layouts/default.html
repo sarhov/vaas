@@ -5,14 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width">
-   
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ "/css/screen.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/css/font-awesome.min.css" | prepend: site.baseurl }}">
 </head>
 <body class="{% if page.url == '/' %} home {% else %} {{page.url | first }} {% endif %}">
 
-
+  <section class=" main-header-wrapper">
+    <header class="main-header clearfix">
+      <div class="main-header__phone">
+        <span href="#" class="main-header__phone_item">+374 94 77 33 02: (Далеко-далеко за словесными горами.)</span>
+        <!-- main-header__phone_item -->
+      </div>
+      <!-- main-header__phone -->
+      <div class="main-header__menu-pusher">
+        <i class="fa fa-menu"></i>
+      </div>
+      <!-- main-header__menu-pusher -->
+      <div class="main-header__nav">
+      {% for i in (1..5) %}
+        <a href="#" class="main-header__nav_item {% if forloop.index == 2 %} is-active {% endif %}">
+          пунтк меню {{forloop.index}}
+        </a>
+      {% endfor %}
+      </div>
+      <!-- main-header__nav -->
+    </header>
+    <!-- main-header -->
+  </section>
+  <!-- main-header-wrapper -->
 
   <script src="{{"/js/jquery-1.8.3.min.js" | prepand: site.baseurl }}"></script>
   <script src="{{"/js/functions.js" | prepand: site.baseurl}}"></script>
