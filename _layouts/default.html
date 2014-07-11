@@ -20,7 +20,7 @@
       </div>
       <!-- main-header__phone -->
       <div class="main-header__menu-pusher">
-        <i class="fa fa-menu"></i>
+        <i class="fa fa-list"></i>
       </div>
       <!-- main-header__menu-pusher -->
       <div class="main-header__nav">
@@ -35,6 +35,63 @@
     <!-- main-header -->
   </section>
   <!-- main-header-wrapper -->
+
+  <section class="post-header-wrapper">
+    <div class="post-header">
+
+      <div class="site-logo">
+        <a href="" class="site-logo__link">
+        <img src="{{site.baseurl}}/img/logo.png" alt="" class="site-logo__link_img">
+        </a>
+        <!-- site-logo__link -->
+      </div>
+      <!-- site-logo -->
+
+      <div class="search search_top">
+        <select name="" id="" class="search__select">
+          {% for i in (1..8) %}
+            <option value="Категория">Категория {{i}}</option>
+          {% endfor %}
+        </select>
+        <!-- search__select -->
+        <div class="search__input-wrap">
+          <input type="text" class="search__input-wrap_input">
+          <i class="fa fa-search"></i>
+        </div>
+        <!-- search__select -->
+      </div>
+      <!-- search -->
+
+      <div class="shop-cart js-shopCart">
+        <div class="shop-cart__icon">
+          <i class="fa fa-cart"></i>
+        </div>
+        <div class="shop-cart__text"><span class="shop-cart__text_title"></span>
+        <span class="shop-cart__text_count"></span>
+        </div>
+      </div>
+       <!-- shop-cart -->
+      <div class="mini-cart hide">
+        <div class="mini-cart-content">
+        {% for i in (1..3) %}
+          <div class="mini-cart-content__line">
+            
+          </div>
+        {% endfor %}
+          <div class="mini-cart-content__summary">
+            
+          </div>
+          <!-- mini-cart-content__summary -->
+
+        </div>
+        <!-- mini-cart-content -->
+      </div>
+     <!-- mini-cart -->
+
+    </div>
+    <!-- post-header -->
+  </section>
+  <!-- post-header-wrapper -->
 
   <script src="{{"/js/jquery-1.8.3.min.js" | prepand: site.baseurl }}"></script>
   <script src="{{"/js/functions.js" | prepand: site.baseurl}}"></script>
