@@ -48,18 +48,26 @@
       <!-- site-logo -->
 
       <div class="search search_top">
-        <select name="" id="" class="search__select">
-          {% for i in (1..8) %}
-            <option value="Категория">Категория {{i}}</option>
-          {% endfor %}
-        </select>
-        <!-- search__select -->
+      <form action="">
+        <div class="search__select">
+        <i class="fa fa-caret-down"></i>
+        <select name="" id="" class="search__select_select">
+           {% for i in (1..8) %}
+             <option value="Категория">Категория {{i}}</option>
+           {% endfor %}
+          </select>
+      </div> 
+          <!-- search__select -->
         <div class="search__input-wrap">
-          <input type="text" class="search__input-wrap_input">
-          <i class="fa fa-search"></i>
+          <input type="text" class="search__input-wrap_input" placeholder="Введите данные для поиска...">
+          <button class="search__input-wrap_submit">
+             <i class="fa fa-search"></i>
+          </button>
+         
         </div>
         <!-- search__select -->
       </div>
+      </form>
       <!-- search -->
 
       <div class="shop-cart js-shopCart">

@@ -100,14 +100,15 @@ a {
   text-decoration: none;
 }
 
-/* line 41, ../sass/_common.scss */
+/* line 24, ../sass/_common.scss */
 .main-header-wrapper {
-  background: #f5f5f5;
+  background: whitesmoke;
   width: 100%;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #dcdcdc;
+  margin-bottom: 30px;
 }
 
-/* line 47, ../sass/_common.scss */
+/* line 31, ../sass/_common.scss */
 .main-header {
   max-width: 1190px;
   margin: 0 auto;
@@ -115,27 +116,114 @@ a {
   padding: 10px;
   font-size: 12px;
 }
-/* line 52, ../sass/_common.scss */
+/* line 37, ../sass/_common.scss */
 .main-header__phone {
   float: left;
 }
-/* line 55, ../sass/_common.scss */
+/* line 40, ../sass/_common.scss */
 .main-header__menu-pusher {
   display: none;
 }
-/* line 58, ../sass/_common.scss */
+/* line 43, ../sass/_common.scss */
 .main-header__nav {
   float: right;
   overflow: hidden;
   *zoom: 1;
   text-transform: capitalize;
 }
-/* line 62, ../sass/_common.scss */
+/* line 47, ../sass/_common.scss */
 .main-header__nav_item {
   float: left;
   margin-left: 15px;
 }
-/* line 65, ../sass/_common.scss */
+/* line 50, ../sass/_common.scss */
 .main-header__nav_item:hover, .main-header__nav_item.is-active {
   color: #7bbd42;
+}
+
+/* line 57, ../sass/_common.scss */
+.post-header {
+  max-width: 1190px;
+  margin: 0 auto;
+}
+
+/* line 61, ../sass/_common.scss */
+.site-logo {
+  margin-bottom: 30px;
+  float: left;
+}
+
+/* line 66, ../sass/_common.scss */
+.search {
+  border: 1px solid #e9e9e9;
+  float: left;
+  overflow: hidden;
+  *zoom: 1;
+  margin-left: 150px;
+}
+/* line 71, ../sass/_common.scss */
+.search__select {
+  position: relative;
+  float: left;
+  background: #F9F9F9;
+}
+/* line 76, ../sass/_common.scss */
+.search__select .fa {
+  position: absolute;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  background: #F9F9F9;
+  width: 25px;
+  color: #7bbd42;
+  text-align: center;
+  line-height: 35px;
+}
+/* line 88, ../sass/_common.scss */
+.search__select_select {
+  -moz-appearance: none;
+  background-color: #f9f9f9;
+  border: medium none;
+  color: #8c8c8c;
+  font-size: 13px;
+  height: 36px;
+  padding: 10px 8px;
+  min-width: 165px;
+}
+/* line 98, ../sass/_common.scss */
+.search__select_select option {
+  padding: 3px 10px;
+}
+/* line 103, ../sass/_common.scss */
+.search__input-wrap {
+  float: left;
+  position: relative;
+}
+/* line 106, ../sass/_common.scss */
+.search__input-wrap_submit {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 33px;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 116, ../sass/_common.scss */
+.search__input-wrap_submit .fa {
+  color: #7bbd42;
+  line-height: 35px;
+}
+/* line 122, ../sass/_common.scss */
+.search__input-wrap_input {
+  background-color: #ffffff;
+  border: none;
+  border-left: 1x solid gainsboro;
+  padding: 0 34px 0 10px;
+  font-size: 12px;
+  font-style: italic;
+  height: 36px;
+  width: 400px;
 }

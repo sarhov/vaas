@@ -19,29 +19,13 @@ a {
     text-decoration: none;
 }
 
-@mixin inner {
-    max-width: 1190px;
-    margin: 0 auto;
-}
 
-// @mixin wrapper{
-// 	&:before{
-// 		content: '';
-// 		display: block;
-// 		position: absolute;
-// 		width: 100%;
-// 		height: 100%;
-// 		background:#444;
-// 		z-index: 1;
-// 	}
-// }
-
-// header
 
 .main-header-wrapper {
-    background: #f5f5f5;
+    background: whitesmoke;
     width: 100%;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #dcdcdc; 
+    margin-bottom: 30px;
 }
 
 .main-header {
@@ -49,6 +33,7 @@ a {
     background: #F5F5F5;
     padding: 10px;
     font-size: 12px;
+
     &__phone {
         float: left;
     }
@@ -65,6 +50,84 @@ a {
             &:hover, &.is-active {
                 color: #7bbd42;
             }
+        }
+    }
+}
+
+.post-header{
+    @include inner;
+}
+
+.site-logo{
+    margin-bottom: 30px;
+    float: left;
+}
+
+.search{
+    border: 1px solid #e9e9e9;
+    float: left;
+    @include clearfix;
+    margin-left: 150px;
+    &__select{
+        position: relative;
+        float: left;
+        background:#F9F9F9;
+        // padding: 5px;
+        .fa{
+            position: absolute;
+            height: 100%;
+            right: 0;
+            bottom: 0;
+            background:#F9F9F9;
+            width: 25px;
+            color: #7bbd42;
+            // border-right: 1px solid #7bbd42;
+            text-align: center;
+            line-height: 35px;
+        }
+        &_select{
+           -moz-appearance: none;
+            background-color: #f9f9f9;
+            border: medium none;
+            color: #8c8c8c;
+            font-size: 13px;
+            height: 36px;
+            padding: 10px 8px;
+            // width: 165px;
+            min-width: 165px;
+            option{
+                padding: 3px 10px;
+            }
+        }
+    }
+    &__input-wrap{
+        float: left;
+        position: relative;
+        &_submit{
+            background: none;
+            border: none;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 33px;
+            text-align: center;  
+            cursor: pointer;
+                  .fa{
+            color: #7bbd42 ;
+            line-height: 35px;
+        }
+        }
+
+        &_input{
+            background-color: #ffffff;
+            border: none;
+            border-left: 1x solid gainsboro;
+            padding: 0 34px 0 10px;
+            font-size: 12px;
+            font-style: italic;
+            height: 36px;
+            width: 400px;
         }
     }
 }

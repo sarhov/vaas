@@ -1,0 +1,10 @@
+@mixin inner {
+    max-width: 1190px;
+    margin: 0 auto;
+}
+
+@mixin custommedia ($size){
+    @media only screen and (max-width: $size){
+        @content
+    }
+}
