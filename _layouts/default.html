@@ -72,18 +72,41 @@
       </div>
        <!-- shop-cart -->
       <div class="mini-cart hide">
-        <div class="mini-cart-content">
+        <section class="mini-cart-content">
         {% for i in (1..3) %}
-          <div class="mini-cart-content__line">
-            
-          </div>
+          <article class="mini-cart-content__line">
+            <a href="product.html" class="mini-cart-content__line_img-link">
+              <img src="{{site.baseurl}}/img/cart-img{{i}}.jpg" alt="">
+            </a>
+            <!-- mini-cart-content__line_img-link -->
+            <div class="mini-cart-content__line_info">
+              <h1 class="mini-cart-content__line_info_title">
+                <a href="{{site.baseurl}}/product.html" class="mini-cart-content__line_info_title_link js">Название товара</a>
+              </h1>
+              <span class="mini-cart-content__line_info_product-size">
+                <span class="mini-cart-content__line_info_prodcut-size_count">1</span>
+                x
+                <span class="mini-cart-content__line_info_product-size_price">
+                  1245 Руб
+                </span>
+              </span>
+              <!-- mini=cart-content__line_info_product-size -->
+            </div>
+            <!-- mini-cart-content__line_info -->
+          </article>
+          <!-- mini-cart-content__line -->
         {% endfor %}
           <div class="mini-cart-content__summary">
-            
+            <span class="mini-cart-content__sunmmary_cart-count">
+              Товаров в корзине <span class="jsMiniCartTotalCount">3</span>
+            </span>
+            <span class="mini-cart-content__summary_total-price">
+              Итого: <span class="jsMiniCartTotalPrice">450 Руб</span>
+            </span>
           </div>
           <!-- mini-cart-content__summary -->
 
-        </div>
+        </section>
         <!-- mini-cart-content -->
       </div>
      <!-- mini-cart -->
