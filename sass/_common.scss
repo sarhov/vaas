@@ -14,17 +14,19 @@ body {
     font-family: "Open Sans",sans-serif;
 }
 
+.main {
+    transition: all 0.4s;
+}
+
 a {
     color: #777777;
     text-decoration: none;
 }
 
-
-
 .main-header-wrapper {
     background: whitesmoke;
     width: 100%;
-    border-bottom: 1px solid #dcdcdc; 
+    border-bottom: 1px solid #dcdcdc;
     margin-bottom: 30px;
 }
 
@@ -34,7 +36,6 @@ a {
     background: #F5F5F5;
     padding: 10px;
     font-size: 12px;
-
     &__phone {
         float: left;
     }
@@ -54,44 +55,44 @@ a {
         }
     }
 }
+
 // END main-header
 
-.post-header{
+.post-header {
     @include inner;
 }
 
-.site-logo{
+.site-logo {
     margin-bottom: 30px;
     float: left;
 }
 
 // search
-.search{
+.search {
     border: 1px solid #e9e9e9;
     float: left;
     @include clearfix;
     margin-left: 150px;
     width: 45%;
-    &__select{
+    &__select {
         position: relative;
         float: left;
-        background:#F9F9F9;
-
+        background: #F9F9F9;
         // padding: 5px;
-        .fa{
+        .fa {
             position: absolute;
             height: 100%;
             right: 0;
             bottom: 0;
-            background:#F9F9F9;
+            background: #F9F9F9;
             width: 25px;
             color: #7bbd42;
             // border-right: 1px solid #7bbd42;
             text-align: center;
             line-height: 35px;
         }
-        &_select{
-           -moz-appearance: none;
+        &_select {
+            -moz-appearance: none;
             background-color: #f9f9f9;
             border: medium none;
             color: #8c8c8c;
@@ -100,16 +101,16 @@ a {
             padding: 10px 8px;
             // width: 165px;
             min-width: 165px;
-            option{
+            option {
                 padding: 3px 10px;
             }
         }
     }
-    &__input-wrap{
+    &__input-wrap {
         float: left;
         position: relative;
         width: calc(100% -  165px);
-        &_submit{
+        &_submit {
             background: none;
             border: none;
             position: absolute;
@@ -117,15 +118,14 @@ a {
             top: 0;
             bottom: 0;
             width: 33px;
-            text-align: center;  
+            text-align: center;
             cursor: pointer;
-                  .fa{
-            color: #7bbd42 ;
-            line-height: 35px;
+            .fa {
+                color: #7bbd42;
+                line-height: 35px;
+            }
         }
-        }
-
-        &_input{
+        &_input {
             background-color: #ffffff;
             border: none;
             border-left: 1px solid gainsboro;
@@ -137,31 +137,32 @@ a {
         }
     }
 }
+
 // END search
 
-
 // shop-cart
-.shop-cart{
+.shop-cart {
     margin-left: 150px;
     float: right;
     position: relative;
-    &__icon{
+    &__icon {
         float: left;
         margin-right: 10px;
         width: 38px;
         height: 38px;
         text-align: center;
         line-height: 38px;
-        background:#7BBD42;
-        .fa{
+        background: #7BBD42;
+        text-indent: -1px;
+        .fa {
             color: #fff;
             font-size: 18px;
         }
     }
-    &__text{
+    &__text {
         float: left;
         overflow: hidden;
-        &_title{
+        &_title {
             display: block;
             font-weight: bold;
             font-size: 14px;
@@ -170,13 +171,14 @@ a {
         }
     }
 }
+
 // END shop-cart
 
-.mini-cart{
+.mini-cart {
     position: absolute;
     top: calc(100% + 5px);
     right: 0;
     width: 300px;
-    background:#fff;
+    background: #fff;
     border: 1px solid #e4e5e7;
 }
