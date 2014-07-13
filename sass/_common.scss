@@ -28,6 +28,7 @@ a {
     margin-bottom: 30px;
 }
 
+// main-header
 .main-header {
     @include inner;
     background: #F5F5F5;
@@ -53,6 +54,7 @@ a {
         }
     }
 }
+// END main-header
 
 .post-header{
     @include inner;
@@ -63,15 +65,18 @@ a {
     float: left;
 }
 
+// search
 .search{
     border: 1px solid #e9e9e9;
     float: left;
     @include clearfix;
     margin-left: 150px;
+    width: 45%;
     &__select{
         position: relative;
         float: left;
         background:#F9F9F9;
+
         // padding: 5px;
         .fa{
             position: absolute;
@@ -103,6 +108,7 @@ a {
     &__input-wrap{
         float: left;
         position: relative;
+        width: calc(100% -  165px);
         &_submit{
             background: none;
             border: none;
@@ -122,12 +128,55 @@ a {
         &_input{
             background-color: #ffffff;
             border: none;
-            border-left: 1x solid gainsboro;
+            border-left: 1px solid gainsboro;
             padding: 0 34px 0 10px;
             font-size: 12px;
             font-style: italic;
             height: 36px;
-            width: 400px;
+            width: 100%;
         }
     }
+}
+// END search
+
+
+// shop-cart
+.shop-cart{
+    margin-left: 150px;
+    float: right;
+    position: relative;
+    &__icon{
+        float: left;
+        margin-right: 10px;
+        width: 38px;
+        height: 38px;
+        text-align: center;
+        line-height: 38px;
+        background:#7BBD42;
+        .fa{
+            color: #fff;
+            font-size: 18px;
+        }
+    }
+    &__text{
+        float: left;
+        overflow: hidden;
+        &_title{
+            display: block;
+            font-weight: bold;
+            font-size: 14px;
+            color: #2e3a47;
+            text-transform: uppercase;
+        }
+    }
+}
+// END shop-cart
+
+.mini-cart{
+    position: absolute;
+    top: calc(100% + 5px);
+    right: 0;
+    width: 300px;
+    background:#fff;
+    border: 1px solid #e4e5e7;
 }
