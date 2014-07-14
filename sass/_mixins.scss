@@ -3,26 +3,25 @@
     margin: 0 auto;
 }
 
-
-
-@mixin custommedia ($size){
-    @media only screen and (max-width: $size){
-        @content
+@mixin custommedia($size) {
+    @media only screen and (max-width: $size) {
+        @content;
     }
-} 
-
-@mixin bordered{
-	border-radius: 5px;
 }
 
-@mixin p-button{
-	padding: 5px 10px;
-	display: inline-block;
-	text-transform: uppercase;
+@mixin bordered {
+    border-radius: 5px;
 }
 
-@mixin trs{
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
+@mixin p-button {
+    padding: 5px 10px;
+    display: inline-block;
+    text-transform: uppercase;
 }
+
+@mixin trs {
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+

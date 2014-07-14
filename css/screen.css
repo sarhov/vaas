@@ -2,20 +2,20 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
- /* line 5, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
- html, body, div, span, applet, object, iframe,
- h1, h2, h3, h4, h5, h6, p, blockquote, pre,
- a, abbr, acronym, address, big, cite, code,
- del, dfn, em, img, ins, kbd, q, s, samp,
- small, strike, strong, sub, sup, tt, var,
- b, u, i, center,
- dl, dt, dd, ol, ul, li,
- fieldset, form, label, legend,
- table, caption, tbody, tfoot, thead, tr, th, td,
- article, aside, canvas, details, embed,
- figure, figcaption, footer, header, hgroup,
- menu, nav, output, ruby, section, summary,
- time, mark, audio, video {
+/* line 5, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -95,14 +95,14 @@ body {
 }
 
 /* line 17, ../sass/_common.scss */
-.main {
-  transition: all 0.4s;
-}
-
-/* line 21, ../sass/_common.scss */
 a {
   color: #777777;
   text-decoration: none;
+}
+
+/* line 22, ../sass/_common.scss */
+.hide {
+  display: none;
 }
 
 /* line 26, ../sass/_common.scss */
@@ -206,7 +206,8 @@ a {
   position: relative;
   width: calc(100% -  165px);
 }
-/* line 113, ../sass/_common.scss */
+/* line 112, ../sass/_common.scss */
+p
 .search__input-wrap_submit {
   background: none;
   border: none;
@@ -219,6 +220,7 @@ a {
   cursor: pointer;
 }
 /* line 123, ../sass/_common.scss */
+p
 .search__input-wrap_submit .fa {
   color: #7bbd42;
   line-height: 35px;
@@ -271,7 +273,7 @@ a {
   text-transform: uppercase;
 }
 
-/* line 177, ../sass/_common.scss */
+/* line 179, ../sass/_common.scss */
 .mini-cart {
   position: absolute;
   top: calc(100% + 5px);
@@ -279,4 +281,22 @@ a {
   width: 300px;
   background: #fff;
   border: 1px solid #e4e5e7;
+}
+
+/* line 190, ../sass/_common.scss */
+.main-nav {
+  max-width: 1190px;
+  margin: 0 auto;
+  background: #2E3A47;
+}
+/* line 193, ../sass/_common.scss */
+.main-nav__list {
+  list-style-type: none;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 196, ../sass/_common.scss */
+.main-nav__list_item {
+  position: relative;
+  float: left;
 }
