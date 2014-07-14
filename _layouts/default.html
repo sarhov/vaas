@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="viewport" content="width=device-width">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <!-- Custom CSS -->
   <link rel="stylesheet" href="{{ " /css/screen.css " | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ " /css/font-awesome.min.css " | prepend: site.baseurl }}">
@@ -65,7 +65,7 @@
           </div>
           <!-- search__select -->
         </form>
-        </div>
+      </div>
       <!-- search -->
 
       <div class="shop-cart clearfix js-shopCart">
@@ -136,7 +136,7 @@
           <a href="" class="main-nav__list_item_link">  
           <!-- {% if forloop.index == 1 %}
             <i class="fa fa-home"></i>
-          {% endif %} -->
+            {% endif %} -->
             Название Категории
           </a>
         </li>
@@ -165,15 +165,15 @@
 
   <section class="banners-wrap">
     <div class="banners">
-    <div class="banners-inner">
-    {% for i in (1..4) %}
-      <figure class="banners__item">
-        <a href="" class="banners__item_link">
-        <img src="{{site.baseurl}}/img/banners-{{i}}.jpg" alt="" class="banners__item_link_img">
-        </a>
-      </figure>
-      <!-- banners__item -->
-      {% endfor %}
+      <div class="banners-inner">
+        {% for i in (1..4) %}
+        <figure class="banners__item">
+          <a href="" class="banners__item_link">
+            <img src="{{site.baseurl}}/img/banners-{{i}}.jpg" alt="" class="banners__item_link_img">
+          </a>
+        </figure>
+        <!-- banners__item -->
+        {% endfor %}
       </div>
       <!-- banners-inner -->
     </div>
@@ -184,67 +184,85 @@
   <section class="carousels-wrap">
     <div class="carousels">
       <dl class="carousels__box clearfix">
-      {% for i in (1..5) %}
+        {% for i in (1..5) %}
         <dt class="carousels__box_title {% if forloop.index == 1 %} isActive {% endif %}">
           <button class="carousels__box_title_action">Таб {{i}}</button>
         </dt>
         <!-- carusels__box_title -->
         <dd class="carousels__box_item ">
          <section class="carousel-content">
-         {% for i in (1..4) %}
+           {% for i in (1..4) %}
            <article class="carousel-content__item">
-              <a href="" class="carousel-content__item_img-link jsHasImages">
-                <img src="{{site.baseurl}}/img/product-img-{{i}}.jpg" alt="{{Название товара}}" class="carousel-content__item_img-link-img carousel-content__item_img-link-img_first">
-                <img src="{{site.baseurl}}/img/product-img-{{i}}-2.jpg" alt="{{Название товара}}" class="carousel-content__item_img-link-img carousel-content__item_img-link-img_second">
+            <a href="" class="carousel-content__item_img-link jsHasImages">
+              <img src="{{site.baseurl}}/img/product-img-{{i}}.jpg" alt="{{Название товара}}" class="carousel-content__item_img-link-img carousel-content__item_img-link-img_first">
+              <img src="{{site.baseurl}}/img/product-img-{{i}}-2.jpg" alt="{{Название товара}}" class="carousel-content__item_img-link-img carousel-content__item_img-link-img_second">
+            </a>
+            <!-- carousel-content__item_img-link -->
+            <h1 class="carousel-content__item_title">
+              <a href="" class="carousel-content__item_title_link">
+                Название товара
               </a>
-              <!-- carousel-content__item_img-link -->
-              <h1 class="carousel-content__item_title">
-                <a href="" class="carousel-content__item_title_link">
-                  Название товара
-                </a>
-              </h1>
-              <!-- carousel-content__item_title -->
-             <div class="carousel-content__item_prices">
-               <span class="carousel-content_-item_prices_new-price">4560 Руб</span>
-               <del class="carousel-content__item_prices_old-price">5780</del>
-             </div>
-             <!-- carousel-content__item_prices -->
-             <div class="carousel-content__item_buyzone">
-               <button class="carousel-content__item_buyzone_buy carousel-content__item_buyzone_action jsAddToCaart">Добавить в корзину</button>
-               <button class="carousel-content__item_buyzone_compare carousel-content__item_buyzone_action jsAddToCompare">
+            </h1>
+            <!-- carousel-content__item_title -->
+            <div class="carousel-content__item_prices">
+             <del class="carousel-content__item_prices_old-price">5780</del>
+             <span class="carousel-content__item_prices_new-price">4560 Руб</span>
+           </div>
+           <!-- carousel-content__item_prices -->
+           <div class="carousel-content__item_buyzone">
+             <button class="carousel-content__item_buyzone_buy carousel-content__item_buyzone_action jsAddToCaart">Добавить в корзину</button>
+             <button class="carousel-content__item_buyzone_compare carousel-content__item_buyzone_action jsAddToCompare">
                <i class="fa fa-copy"></i>
-               </button>
-             </div>
-             <!-- carousel-content__item_buyzone -->
+             </button>
+           </div>
+           <!-- carousel-content__item_buyzone -->
 
-             <div class="carousel-content__item_quick-view">
-               <button class="carousel-content__item_quick-view_product carousel-content__item_quick-view_action"><i class="fa fa-eye"></i></button>
-               <button class="carousel-content__item_quick-view_images carousel-content__item_quick-view_action"><i class="fa fa-search-plus"></i></button>
-             </div>
-             <!-- carousel-content__item_quick-view -->
-             {% include quick-view.html %}
-           </article>
-           <!-- carousel-content__item -->
-           {% endfor %}
-         </section>
-         <!-- carousel-content -->
-         <div class="carousels__box_item_action">
-          <button class="carousels__box_item_actions_button carousel-navigations"> <i class="fa fa-iconname"></i> </button>
-          <button class="carousels__box_item_actions_button carousel-navigations"> <i class="fa fa-iconname"></i> </button>
-         </div>
-         <!-- carousel-__box_item_action -->
-        </dd>
-        <!-- carousels__box-item -->
-      {% endfor %}
+           <div class="carousel-content__item_quick-view">
+             <button class="carousel-content__item_quick-view_product carousel-content__item_quick-view_action"><i class="fa fa-eye"></i></button>
+             <button class="carousel-content__item_quick-view_images carousel-content__item_quick-view_action"><i class="fa fa-search-plus"></i></button>
+           </div>
+           <!-- carousel-content__item_quick-view -->
+           {% include quick-view.html %}
+         </article>
+         <!-- carousel-content__item -->
+         {% endfor %}
+       </section>
+       <!-- carousel-content -->
+       <div class="carousels__box_item_action">
+        <button class="carousels__box_item_actions_button carousel-navigations"> <i class="fa fa-iconname"></i> </button>
+        <button class="carousels__box_item_actions_button carousel-navigations"> <i class="fa fa-iconname"></i> </button>
+      </div>
+      <!-- carousel-__box_item_action -->
+    </dd>
+    <!-- carousels__box-item -->
+    {% endfor %}
 
-      </dl>
-      <!-- carouseles__box -->
-    </div>
-    <!-- carousels -->
-  </section>
-  <!-- carousels-wrap -->
+  </dl>
+  <!-- carouseles__box -->
+</div>
+<!-- carousels -->
+</section>
+<!-- carousels-wrap -->
 
-  <script src="{{" /js/jquery-1.8.3.min.js " | prepand: site.baseurl }}"></script>
-  <script src="{{" /js/functions.js " | prepand: site.baseurl}}"></script>
-</body>
-</html>
+<section class="wide-banners-wrap">
+  <div class="wide-banners">
+    <figure class="wide-banners-inner clearfix">
+      <a href="#" class="wide-banners__item">
+        <img src="{{site.baseurl}}/img/banners-img-1.jpg" alt="" class="wide-banners__item_img">
+      </a>
+      <!-- wide-banners__item -->
+      <a href="#" class="wide-banners__item">
+        <img src="{{site.baseurl}}/img/banners-img-2.jpg" alt="" class="wide-banners__item_img">
+      </a>
+      <!-- wide-banner__item -->
+    </figure>
+    <!-- wide-banners-inner -->
+  </div>
+  <!-- wide-banners -->
+</section>
+<!-- wide-banners-wrap -->
+
+    <script src="{{" /js/jquery-1.8.3.min.js " | prepand: site.baseurl }}"></script>
+    <script src="{{" /js/functions.js " | prepand: site.baseurl}}"></script>
+  </body>
+  </html>

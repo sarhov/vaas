@@ -29,32 +29,45 @@
 // @TODO: Add docs to abscenter!
 //
 @mixin abscenter {
-  top:0 ;
-  bottom:0;
-  left:0;
-  right:0;
-  margin:auto;
-  position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
 }
 
 // 
 // @TODO: Add docs to hovbutton!
 //
 @mixin hovbutton {
-  background: #2e3a47;
-  color: #fff;
-  border: 1px solid #28313c;
-  font-size: 12px;
-   padding: 0 16px;
+    background: #2e3a47;
+    color: #fff;
+    border: 1px solid #28313c;
+    font-size: 12px;
+    padding: 0 16px;
     text-align: center;
     text-transform: uppercase;
     display: inline-block;
     cursor: pointer;
     border-radius: 3px;
     line-height: 26px;
-  &:hover{
-    background-color: #7bbd42;
-    border-color: #6fab3b;
-  }
+    &:hover {
+        background-color: #7bbd42;
+        border-color: #6fab3b;
+    }
 }
 
+// 
+// @TODO: Add docs to boxshadow!
+//
+@mixin boxshadow {
+    &:before {
+        content: '';
+        @include abscenter;
+        @include trs;
+    }
+    &:hover:before {
+        box-shadow: 0 0 0 30px rgba(0, 0, 0, 0.03) inset;
+    }
+}

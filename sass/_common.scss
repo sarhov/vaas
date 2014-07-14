@@ -260,14 +260,7 @@ a {
             position: relative;
             // background: #9c0;
             // height: 200px;
-            &:before{
-                content: '';
-                @include abscenter;
-                @include   trs;
-            }
-            &:hover:before{
-                    box-shadow: 0 0 0 30px rgba(0, 0, 0, 0.03) inset
-            }
+            @include boxshadow;
             &_img{
                 max-width: 100%;
                 display: block;
@@ -289,7 +282,7 @@ a {
     // height: 350px;
     &__box{
         position: relative;
-        height: 350px;
+        height: 390px;
         &_title{
             float: left;
             margin-right: -1px;
@@ -336,7 +329,6 @@ a {
     }    
     }
 }
-
 // END carousels
 
 // carousel-content
@@ -408,6 +400,7 @@ a {
         }
         &_buyzone{
             display: block;
+            padding: 0 20px;
             &_action{
                 @include hovbutton;
             }
@@ -446,8 +439,63 @@ a {
         -o-transform: translate3d(0,0,0);
         transform: translate3d(0,0,0);
     }
+    &_title{
+        margin-bottom: 10px;
+        padding: 0 20px;
+        &_link{
+            color: #2e3a47;
+            font-weight: 600;
+            text-transform: capitalize;
+            font-size: 14px;
+            &:hover{
+                color: #2e3a47;
+            }
+        }
+
+    }
+      &_prices{
+            margin-bottom: 20px;
+            padding: 0 20px;
+            &_old-price{
+                color: #999999;
+                font-size: 16px;
+                font-weight: 600;
+                vertical-align: middle;
+                margin-right: 5px;
+                margin-top: -2px;
+                display: inline-block;
+            }
+            &_new-price{
+                color: #f05423;
+                font-size: 14px;
+                vertical-align: middle;
+                font-weight: 600;
+            }
+        }
     }   
-
-
 }
 // END carousel-content
+
+// wide-banners
+.wide-banners-wrap{
+    margin-bottom: 30px;
+}
+.wide-banners{
+    @include inner;
+    &__item{
+        position: relative;
+        @include boxshadow;
+        float: left;
+        // width: 45%;
+        // height: 100px;
+        &_img{
+            // @include abscenter;
+            // width: 100%;
+            display: block;
+        }
+        &:last-child{
+            // width: 55%;
+        }
+    }
+}
+// END wide banners
