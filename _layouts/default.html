@@ -191,7 +191,41 @@
         <!-- carusels__box_title -->
         <dd class="carousels__box_item ">
          <section class="carousel-content">
-           
+         {% for i in (1..4) %}
+           <article class="carousel-content__item">
+              <a href="" class="carousel-content__item_img-link">
+                <img src="{{site.baseurl}}/img/product-img-{{i}}.jpg" alt="{{Название товара}}" class="carousel-content__item_img-link-img carousel-content__item_img-link-img_first">
+                <img src="{{site.baseurl}}/img/product-img-{{i}}.jpg" alt="{{Название товара}}" class="carousel-content__item_img-link-img carousel-content__item_img-link-img_second">
+              </a>
+              <!-- carousel-content__item_img-link -->
+              <h1 class="carousel-content__item_title">
+                <a href="" class="carousel-content__item_title_link">
+                  Название товара
+                </a>
+              </h1>
+              <!-- carousel-content__item_title -->
+             <div class="carousel-content__item_prices">
+               <span class="carousel-content_-item_prices_new-price">4560 Руб</span>
+               <del class="carousel-content__item_prices_old-price">5780</del>
+             </div>
+             <!-- carousel-content__item_prices -->
+             <div class="carousel-content__item_buyzone">
+               <button class="carousel-content__item_buyzone_buy jsAddToCaart">Добавить в корзину</button>
+               <button class="carousel-content__item_buyzone_compare jsAddToCompare">
+               <i class="fa fa-iconname"></i>
+               </button>
+             </div>
+             <!-- carousel-content__item_buyzone -->
+
+             <div class="carousel-content__item_quick-view">
+               <button class="carousel-content__item_quick-view_view-item carousel-content__item-quick-view_action"><i class="fa faiconname"></i></button>
+               <button class="carousel-content__item-quick-view_images carousel-content__item_quick-view_action"><i class="fa fa-iconname"></i></button>
+             </div>
+             <!-- carousel-content__item_quick-view -->
+             {% include quick-view.html %}
+           </article>
+           <!-- carousel-content__item -->
+           {% endfor %}
          </section>
          <!-- carousel-content -->
          <div class="carousels__box_item_action">
