@@ -253,10 +253,20 @@ a {
         &_link{
             display: block;
             width: 100%;
+            position: relative;
             // background: #9c0;
             // height: 200px;
-            &img{
+            &:before{
+                content: '';
+                @include abscenter;
+                @include   trs;
+            }
+            &:hover:before{
+                    box-shadow: 0 0 0 30px rgba(0, 0, 0, 0.03) inset
+            }
+            &_img{
                 max-width: 100%;
+                display: block;
                 width: 100%;
                 height: auto;
             }

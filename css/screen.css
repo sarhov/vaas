@@ -373,10 +373,29 @@ a {
 .banners__item_link {
   display: block;
   width: 100%;
+  position: relative;
 }
-/* line 258, ../sass/_common.scss */
-.banners__item_linkimg {
+/* line 259, ../sass/_common.scss */
+.banners__item_link:before {
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 264, ../sass/_common.scss */
+.banners__item_link:hover:before {
+  box-shadow: 0 0 0 30px rgba(0, 0, 0, 0.03) inset;
+}
+/* line 267, ../sass/_common.scss */
+.banners__item_link_img {
   max-width: 100%;
+  display: block;
   width: 100%;
   height: auto;
 }
