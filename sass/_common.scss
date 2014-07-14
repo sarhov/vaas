@@ -109,7 +109,7 @@ a {
     &__input-wrap {
         float: left;
         position: relative;
-        width: calc(100% -  165px);p
+        width: calc(100% -  165px);
         &_submit {
             background: none;
             border: none;
@@ -196,6 +196,14 @@ a {
         &_item{
             position: relative;
             float: left;
+            // max-width: 200px;
+            &_link{
+                color: #fff;
+                font-size: 12px;
+                text-transform: uppercase;
+                padding: 10px 20px;
+                display: block;
+            }
         }
     }
 }

@@ -36,10 +36,13 @@
   </section>
   <!-- main-header-wrapper -->
 
-  <section class="post-header-wrapper">
+  <section class="post-header-wrapper clearfix">
     <div class="post-header">
 
       <div class="site-logo">
+        <a href="{{site.baseurl}}" class="site-logo__title">
+          <img src="{{site.baseurl}}/img/logo.png" alt="{{site.title}}" class="site-logo__title_logo">
+        </a>
       </div>
       <!-- site-logo -->
 
@@ -126,9 +129,18 @@
   <section class="main-nav-wrapper">
     <nav class="main-nav">
       <ul class="main-nav__list">
+        {% for i in (1..5) %}
         <li class="main-nav__list_item">
-          <a href="" class="main-nav__list_item_link"></a>
+
+          <a href="" class="main-nav__list_item_link">  
+<!--           {% if forloop.index == 1 %}
+            <i class="fa fa-home"></i>
+          {% endif %} -->
+            Название Категории
+          </a>
         </li>
+        {% endfor %}
+
         <!-- main-nav__list_item -->
       </ul>
       <!-- main-nav__list -->

@@ -206,8 +206,7 @@ a {
   position: relative;
   width: calc(100% -  165px);
 }
-/* line 112, ../sass/_common.scss */
-p
+/* line 113, ../sass/_common.scss */
 .search__input-wrap_submit {
   background: none;
   border: none;
@@ -220,7 +219,6 @@ p
   cursor: pointer;
 }
 /* line 123, ../sass/_common.scss */
-p
 .search__input-wrap_submit .fa {
   color: #7bbd42;
   line-height: 35px;
@@ -299,4 +297,12 @@ p
 .main-nav__list_item {
   position: relative;
   float: left;
+}
+/* line 200, ../sass/_common.scss */
+.main-nav__list_item_link {
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  display: block;
 }
