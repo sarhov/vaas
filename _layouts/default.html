@@ -193,9 +193,9 @@
          <section class="carousel-content">
          {% for i in (1..4) %}
            <article class="carousel-content__item">
-              <a href="" class="carousel-content__item_img-link">
+              <a href="" class="carousel-content__item_img-link jsHasImages">
                 <img src="{{site.baseurl}}/img/product-img-{{i}}.jpg" alt="{{Название товара}}" class="carousel-content__item_img-link-img carousel-content__item_img-link-img_first">
-                <img src="{{site.baseurl}}/img/product-img-{{i}}.jpg" alt="{{Название товара}}" class="carousel-content__item_img-link-img carousel-content__item_img-link-img_second">
+                <img src="{{site.baseurl}}/img/product-img-{{i}}-2.jpg" alt="{{Название товара}}" class="carousel-content__item_img-link-img carousel-content__item_img-link-img_second">
               </a>
               <!-- carousel-content__item_img-link -->
               <h1 class="carousel-content__item_title">
@@ -210,16 +210,16 @@
              </div>
              <!-- carousel-content__item_prices -->
              <div class="carousel-content__item_buyzone">
-               <button class="carousel-content__item_buyzone_buy jsAddToCaart">Добавить в корзину</button>
-               <button class="carousel-content__item_buyzone_compare jsAddToCompare">
-               <i class="fa fa-iconname"></i>
+               <button class="carousel-content__item_buyzone_buy carousel-content__item_buyzone_action jsAddToCaart">Добавить в корзину</button>
+               <button class="carousel-content__item_buyzone_compare carousel-content__item_buyzone_action jsAddToCompare">
+               <i class="fa fa-copy"></i>
                </button>
              </div>
              <!-- carousel-content__item_buyzone -->
 
              <div class="carousel-content__item_quick-view">
-               <button class="carousel-content__item_quick-view_view-item carousel-content__item-quick-view_action"><i class="fa faiconname"></i></button>
-               <button class="carousel-content__item-quick-view_images carousel-content__item_quick-view_action"><i class="fa fa-iconname"></i></button>
+               <button class="carousel-content__item_quick-view_product carousel-content__item_quick-view_action"><i class="fa fa-eye"></i></button>
+               <button class="carousel-content__item_quick-view_images carousel-content__item_quick-view_action"><i class="fa fa-search-plus"></i></button>
              </div>
              <!-- carousel-content__item_quick-view -->
              {% include quick-view.html %}

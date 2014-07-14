@@ -37,3 +37,24 @@
   position: absolute;
 }
 
+// 
+// @TODO: Add docs to hovbutton!
+//
+@mixin hovbutton {
+  background: #2e3a47;
+  color: #fff;
+  border: 1px solid #28313c;
+  font-size: 12px;
+   padding: 0 16px;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+    line-height: 26px;
+  &:hover{
+    background-color: #7bbd42;
+    border-color: #6fab3b;
+  }
+}
+
