@@ -131,16 +131,14 @@
       <ul class="main-nav__list">
         {% for i in (1..5) %}
         <li class="main-nav__list_item">
-
           <a href="" class="main-nav__list_item_link">  
-<!--           {% if forloop.index == 1 %}
+          <!-- {% if forloop.index == 1 %}
             <i class="fa fa-home"></i>
           {% endif %} -->
             Название Категории
           </a>
         </li>
         {% endfor %}
-
         <!-- main-nav__list_item -->
       </ul>
       <!-- main-nav__list -->
@@ -152,6 +150,34 @@
     <!-- main-nav -->
   </section>
   <!-- main-nav-wrapper -->
+
+  <section class="slider-wrap">
+    <div class="slider">
+      <img src="{{site.baseurl}}/img/robot.jpg" alt="" class="slider__img-tmp">
+      <div class="temp-text">
+        Здесь будет слайдер
+      </div>
+    </div>
+  </section>
+  <!-- slider-wrap -->
+
+  <section class="banners-wrap">
+    <div class="banners">
+    <div class="banners-inner">
+    {% for i in (1..4) %}
+      <figure class="banners__item">
+        <a href="" class="banners__item_link">
+        <img src="{{site.baseurl}}/img/banners-{{i}}.jpg" alt="" class="banners__item_link_img">
+        </a>
+      </figure>
+      <!-- banners__item -->
+      {% endfor %}
+      </div>
+      <!-- banners-inner -->
+    </div>
+    <!-- banners -->
+  </section>
+  <!-- banners-wrap -->
 
   <script src="{{" /js/jquery-1.8.3.min.js " | prepand: site.baseurl }}"></script>
   <script src="{{" /js/functions.js " | prepand: site.baseurl}}"></script>

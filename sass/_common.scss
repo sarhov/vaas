@@ -187,6 +187,9 @@ a {
 // END mini-cart
 
 // main-nav
+.main-nav-wrapper{
+    margin-bottom: 20px;
+}
 .main-nav{
     @include inner;
     background: #2E3A47;
@@ -208,3 +211,56 @@ a {
     }
 }
 // END main-nav
+
+// slider
+.slider{
+    @include inner;
+    height: 500px;
+    text-align: center;
+    position: relative;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    &__img-tmp{
+        max-width:100%;
+        height: auto;
+        max-height: 100%;
+        @include abscenter;
+    }
+    .temp-text{
+        @include abscenter;
+        font-size: 27px;
+        text-shadow: 0 0 4px #444;
+        padding-top: 50px;
+    }
+}
+// END slider
+
+// banners
+.banners-wrap{
+    margin-bottom: 40px;
+}
+.banners{
+    @include inner;
+    @include clearfix;
+    // margin: 0 -10px;
+    &-inner{
+        margin: 0 -10px;
+    }
+    &__item{
+        padding: 0 10px;
+        float: left;
+        width: 25%;
+        &_link{
+            display: block;
+            width: 100%;
+            // background: #9c0;
+            // height: 200px;
+            &img{
+                max-width: 100%;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+// END banners
