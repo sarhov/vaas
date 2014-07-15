@@ -62,6 +62,7 @@
 // @TODO: Add docs to boxshadow!
 //
 @mixin boxshadow {
+    position: relative;
     &:before {
         content: '';
         @include abscenter;

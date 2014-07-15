@@ -389,8 +389,9 @@ a {
   display: block;
   width: 100%;
   position: relative;
+  position: relative;
 }
-/* line 65, ../sass/_mixins.scss */
+/* line 66, ../sass/_mixins.scss */
 .banners__item_link:before {
   content: '';
   top: 0;
@@ -403,7 +404,7 @@ a {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 70, ../sass/_mixins.scss */
+/* line 71, ../sass/_mixins.scss */
 .banners__item_link:hover:before {
   box-shadow: 0 0 0 30px rgba(0, 0, 0, 0.03) inset;
 }
@@ -419,18 +420,22 @@ a {
 .carousels-wrap {
   margin-bottom: 40px;
 }
+/* line 285, ../sass/_common.scss */
+.carousels-wrap.single .carousels__box_title.isActive {
+  border-top-color: #f05423;
+}
 
-/* line 286, ../sass/_common.scss */
+/* line 291, ../sass/_common.scss */
 .carousels {
   max-width: 1190px;
   margin: 0 auto;
 }
-/* line 289, ../sass/_common.scss */
+/* line 294, ../sass/_common.scss */
 .carousels__box {
   position: relative;
   height: 390px;
 }
-/* line 292, ../sass/_common.scss */
+/* line 297, ../sass/_common.scss */
 .carousels__box_title {
   float: left;
   margin-right: -1px;
@@ -438,21 +443,21 @@ a {
   border-style: solid;
   border-color: transparent;
 }
-/* line 298, ../sass/_common.scss */
+/* line 303, ../sass/_common.scss */
 .carousels__box_title.isActive, .carousels__box_title:hover {
   border-color: #7bbd42 #e4e5e7;
   position: relative;
   z-index: 2;
 }
-/* line 302, ../sass/_common.scss */
-.carousels__box_title.isActive_action, .carousels__box_title:hover_action {
+/* line 307, ../sass/_common.scss */
+.carousels__box_title.isActive button, .carousels__box_title:hover button {
   color: #7bbd42 !important;
 }
-/* line 306, ../sass/_common.scss */
+/* line 311, ../sass/_common.scss */
 .carousels__box_title:not(.isActive):hover {
   z-index: 1;
 }
-/* line 309, ../sass/_common.scss */
+/* line 314, ../sass/_common.scss */
 .carousels__box_title_action {
   color: #2e3a47;
   font-weight: 600;
@@ -464,7 +469,7 @@ a {
   display: block;
   font-size: 14px;
 }
-/* line 321, ../sass/_common.scss */
+/* line 326, ../sass/_common.scss */
 .carousels__box_item {
   position: absolute;
   top: 42px;
@@ -475,21 +480,21 @@ a {
   z-index: 1;
   overflow: hidden;
 }
-/* line 330, ../sass/_common.scss */
+/* line 335, ../sass/_common.scss */
 .carousels__box_item_action {
   position: absolute;
   right: 0;
   bottom: calc(100% + 11px);
 }
 
-/* line 341, ../sass/_common.scss */
+/* line 346, ../sass/_common.scss */
 .carousel-content {
   overflow: hidden;
   *zoom: 1;
   height: 100%;
   margin: 0 -10px;
 }
-/* line 345, ../sass/_common.scss */
+/* line 350, ../sass/_common.scss */
 .carousel-content__item {
   position: relative;
   float: left;
@@ -498,7 +503,7 @@ a {
   height: 100%;
   border-left: 1px solid #ccc;
 }
-/* line 352, ../sass/_common.scss */
+/* line 357, ../sass/_common.scss */
 .carousel-content__item_quick-view {
   position: absolute;
   top: 50%;
@@ -508,7 +513,7 @@ a {
   width: 65px;
   height: 30px;
 }
-/* line 360, ../sass/_common.scss */
+/* line 365, ../sass/_common.scss */
 .carousel-content__item_quick-view_action {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -536,28 +541,28 @@ a {
   background-color: #7bbd42;
   border-color: #6fab3b;
 }
-/* line 370, ../sass/_common.scss */
+/* line 375, ../sass/_common.scss */
 .carousel-content__item_quick-view_product {
   -webkit-transform: translate3d(-20px, 0, 0);
   -ms-transform: translate3d(-20px, 0, 0);
   -o-transform: translate3d(-20px, 0, 0);
   transform: translate3d(-20px, 0, 0);
 }
-/* line 376, ../sass/_common.scss */
+/* line 381, ../sass/_common.scss */
 .carousel-content__item_quick-view_images {
   -webkit-transform: translate3d(20px, 0, 0);
   -ms-transform: translate3d(20px, 0, 0);
   -o-transform: translate3d(20px, 0, 0);
   transform: translate3d(20px, 0, 0);
 }
-/* line 383, ../sass/_common.scss */
+/* line 388, ../sass/_common.scss */
 .carousel-content__item_img-link {
   position: relative;
   height: 200px;
   width: 100%;
   display: block;
 }
-/* line 388, ../sass/_common.scss */
+/* line 393, ../sass/_common.scss */
 .carousel-content__item_img-link-img {
   top: 0;
   bottom: 0;
@@ -571,27 +576,27 @@ a {
   opacity: 1;
   visibility: visible;
 }
-/* line 394, ../sass/_common.scss */
+/* line 399, ../sass/_common.scss */
 .carousel-content__item_img-link-img_second {
   visibility: hidden;
   opacity: 0;
 }
-/* line 398, ../sass/_common.scss */
+/* line 403, ../sass/_common.scss */
 .carousel-content__item_img-link:hover .carousel-content__item_img-link-img_first {
   opacity: 0;
   visibility: hidden;
 }
-/* line 402, ../sass/_common.scss */
+/* line 407, ../sass/_common.scss */
 .carousel-content__item_img-link:hover .carousel-content__item_img-link-img_second {
   opacity: 1;
   visibility: visible;
 }
-/* line 407, ../sass/_common.scss */
+/* line 412, ../sass/_common.scss */
 .carousel-content__item_buyzone {
   display: block;
   padding: 0 20px;
 }
-/* line 410, ../sass/_common.scss */
+/* line 415, ../sass/_common.scss */
 .carousel-content__item_buyzone_action {
   background: #2e3a47;
   color: #fff;
@@ -610,7 +615,7 @@ a {
   background-color: #7bbd42;
   border-color: #6fab3b;
 }
-/* line 413, ../sass/_common.scss */
+/* line 418, ../sass/_common.scss */
 .carousel-content__item_buyzone_compare {
   width: 30px;
   padding: 0;
@@ -622,19 +627,19 @@ a {
   -o-transform: scale(0);
   transform: scale(0);
 }
-/* line 422, ../sass/_common.scss */
+/* line 427, ../sass/_common.scss */
 .carousel-content__item:hover .carousel-content__item_buyzone_compare {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   -o-transform: scale(1);
   transform: scale(1);
 }
-/* line 428, ../sass/_common.scss */
+/* line 433, ../sass/_common.scss */
 .carousel-content__item:hover .carousel-content__item_quick-view_action {
   opacity: 1;
   visibility: visible;
 }
-/* line 432, ../sass/_common.scss */
+/* line 437, ../sass/_common.scss */
 .carousel-content__item:hover .carousel-content__item_quick-view_product {
   opacity: 1;
   visibility: visible;
@@ -643,7 +648,7 @@ a {
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* line 440, ../sass/_common.scss */
+/* line 445, ../sass/_common.scss */
 .carousel-content__item:hover .carousel-content__item_quick-view_images {
   opacity: 1;
   visibility: visible;
@@ -652,28 +657,28 @@ a {
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* line 448, ../sass/_common.scss */
+/* line 453, ../sass/_common.scss */
 .carousel-content__item_title {
   margin-bottom: 10px;
   padding: 0 20px;
 }
-/* line 451, ../sass/_common.scss */
+/* line 456, ../sass/_common.scss */
 .carousel-content__item_title_link {
   color: #2e3a47;
   font-weight: 600;
   text-transform: capitalize;
   font-size: 14px;
 }
-/* line 456, ../sass/_common.scss */
+/* line 461, ../sass/_common.scss */
 .carousel-content__item_title_link:hover {
   color: #2e3a47;
 }
-/* line 462, ../sass/_common.scss */
+/* line 467, ../sass/_common.scss */
 .carousel-content__item_prices {
   margin-bottom: 20px;
   padding: 0 20px;
 }
-/* line 465, ../sass/_common.scss */
+/* line 470, ../sass/_common.scss */
 .carousel-content__item_prices_old-price {
   color: #999999;
   font-size: 16px;
@@ -683,7 +688,7 @@ a {
   margin-top: -2px;
   display: inline-block;
 }
-/* line 474, ../sass/_common.scss */
+/* line 479, ../sass/_common.scss */
 .carousel-content__item_prices_new-price {
   color: #f05423;
   font-size: 14px;
@@ -691,22 +696,23 @@ a {
   font-weight: 600;
 }
 
-/* line 486, ../sass/_common.scss */
+/* line 491, ../sass/_common.scss */
 .wide-banners-wrap {
   margin-bottom: 30px;
 }
 
-/* line 489, ../sass/_common.scss */
+/* line 494, ../sass/_common.scss */
 .wide-banners {
   max-width: 1190px;
   margin: 0 auto;
 }
-/* line 491, ../sass/_common.scss */
+/* line 496, ../sass/_common.scss */
 .wide-banners__item {
+  position: relative;
   position: relative;
   float: left;
 }
-/* line 65, ../sass/_mixins.scss */
+/* line 66, ../sass/_mixins.scss */
 .wide-banners__item:before {
   content: '';
   top: 0;
@@ -719,42 +725,67 @@ a {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 70, ../sass/_mixins.scss */
+/* line 71, ../sass/_mixins.scss */
 .wide-banners__item:hover:before {
   box-shadow: 0 0 0 30px rgba(0, 0, 0, 0.03) inset;
 }
-/* line 497, ../sass/_common.scss */
+/* line 502, ../sass/_common.scss */
 .wide-banners__item_img {
   display: block;
 }
 
-/* line 510, ../sass/_common.scss */
+/* line 515, ../sass/_common.scss */
 .banners-two-wrap {
   margin-bottom: 30px;
 }
 
-/* line 514, ../sass/_common.scss */
+/* line 519, ../sass/_common.scss */
 .banners-two {
   max-width: 1190px;
   margin: 0 auto;
+}
+/* line 522, ../sass/_common.scss */
+.banners-two-inner {
+  margin: 0 -10px;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 517, ../sass/_common.scss */
-.banners-two-inner {
-  margin: 0 -10px;
-}
-/* line 520, ../sass/_common.scss */
+/* line 526, ../sass/_common.scss */
 .banners-two__item {
   width: 25%;
   float: left;
+  padding: 0 10px;
 }
-/* line 523, ../sass/_common.scss */
+/* line 530, ../sass/_common.scss */
+.banners-two__item_small .banners-two__item_link {
+  margin-bottom: 13px;
+}
+/* line 533, ../sass/_common.scss */
 .banners-two__item_link {
   display: block;
+  position: relative;
+  border: 1px solid #e9e9e9;
 }
-/* line 525, ../sass/_common.scss */
+/* line 66, ../sass/_mixins.scss */
+.banners-two__item_link:before {
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 71, ../sass/_mixins.scss */
+.banners-two__item_link:hover:before {
+  box-shadow: 0 0 0 30px rgba(0, 0, 0, 0.03) inset;
+}
+/* line 537, ../sass/_common.scss */
 .banners-two__item_link_img {
   width: 100%;
   height: auto;
+  display: block;
 }

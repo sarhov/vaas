@@ -196,71 +196,7 @@
 </section>
 <!-- banners-wrap -->
 
-<section class="carousels-wrap">
-  <div class="container">
-    <div class="carousels">
-      <dl class="carousels__box clearfix">
-        {% for i in (1..5) %}
-        <dt class="carousels__box_title {% if forloop.index == 1 %} isActive {% endif %}">
-          <button class="carousels__box_title_action">Таб {{i}}</button>
-        </dt>
-        <!-- carusels__box_title -->
-        <dd class="carousels__box_item ">
-         <section class="carousel-content">
-           {% for i in (1..4) %}
-           <article class="carousel-content__item">
-            <a href="" class="carousel-content__item_img-link jsHasImages">
-              <img src="{{site.baseurl}}/img/product-img-{{i}}.jpg" alt="{{Название товара}}" class="carousel-content__item_img-link-img carousel-content__item_img-link-img_first">
-              <img src="{{site.baseurl}}/img/product-img-{{i}}-2.jpg" alt="{{Название товара}}" class="carousel-content__item_img-link-img carousel-content__item_img-link-img_second">
-            </a>
-            <!-- carousel-content__item_img-link -->
-            <h1 class="carousel-content__item_title">
-              <a href="" class="carousel-content__item_title_link">
-                Название товара
-              </a>
-            </h1>
-            <!-- carousel-content__item_title -->
-            <div class="carousel-content__item_prices">
-             <del class="carousel-content__item_prices_old-price">5780</del>
-             <span class="carousel-content__item_prices_new-price">4560 Руб</span>
-           </div>
-           <!-- carousel-content__item_prices -->
-           <div class="carousel-content__item_buyzone">
-             <button class="carousel-content__item_buyzone_buy carousel-content__item_buyzone_action jsAddToCaart">Добавить в корзину</button>
-             <button class="carousel-content__item_buyzone_compare carousel-content__item_buyzone_action jsAddToCompare">
-               <i class="fa fa-copy"></i>
-             </button>
-           </div>
-           <!-- carousel-content__item_buyzone -->
-
-           <div class="carousel-content__item_quick-view">
-             <button class="carousel-content__item_quick-view_product carousel-content__item_quick-view_action"><i class="fa fa-eye"></i></button>
-             <button class="carousel-content__item_quick-view_images carousel-content__item_quick-view_action"><i class="fa fa-search-plus"></i></button>
-           </div>
-           <!-- carousel-content__item_quick-view -->
-           {% include quick-view.html %}
-         </article>
-         <!-- carousel-content__item -->
-         {% endfor %}
-       </section>
-       <!-- carousel-content -->
-       <div class="carousels__box_item_action">
-        <button class="carousels__box_item_actions_button carousel-navigations"> <i class="fa fa-iconname"></i> </button>
-        <button class="carousels__box_item_actions_button carousel-navigations"> <i class="fa fa-iconname"></i> </button>
-      </div>
-      <!-- carousel-__box_item_action -->
-    </dd>
-    <!-- carousels__box-item -->
-    {% endfor %}
-
-  </dl>
-  <!-- carouseles__box -->
-</div>
-<!-- carousels -->
-</div>
-<!-- container -->
-</section>
-<!-- carousels-wrap -->
+{% include carousel.html type="multi" %}
 
 <section class="wide-banners-wrap">
   <div class="container">
@@ -283,24 +219,28 @@
 </section>
 <!-- wide-banners-wrap -->
 
+{% include carousel.html type="single" %}
+
 <section class="banners-two-wrap">
   <div class="container">
     <div class="banners-two">
       <div class="banners-two-inner">
+
+
         {% for i in (1..4) %}
-        <figure class="banners-two__item banners-two__item_{% cycle 'banners': 'small', 'small', 'large' %}">
+        <figure class="banners-two__item banners-two__item_{% cycle 'banners': 'small',  'large' %}">
          {% if forloop.index == 2 or forloop.index == 4 %}
          <a href="#" class="banners-two__item_link">
-          <img src="{{site.baseurl}}/img/banners-two-{{i}}.jpg" alt="" class="banners-two__item_link_img">
+          <img {% if forloop.index == 2 %}src="{{site.baseurl}}/img/banners-two-3.jpg"{% endif %} {% if forloop.index == 4 %}src="{{site.baseurl}}/img/banners-two-6.jpg"{% endif %}   alt="" class="banners-two__item_link_img">
         </a>
         <!-- banners-two__item_link -->
         {% else %}
         <a href="#" class="banners-two__item_link">
-          <img src="{{site.baseurl}}/img/banners-two-{{i}}.jpg" alt="" class="banners-two__item_link_img">
+          <img {% if forloop.index == 1 %}src="{{site.baseurl}}/img/banners-two-1.jpg"{% endif %} {% if forloop.index == 3 %}src="{{site.baseurl}}/img/banners-two-4.jpg"{% endif %} alt="" class="banners-two__item_link_img">
         </a>
         <!-- banners-two__item_link -->
         <a href="#" class="banners-two__item_link">
-          <img src="{{site.baseurl}}/img/banners-two-{{i}}.jpg" alt="" class="banners-two__item_link_img">
+          <img {% if forloop.index == 1 %}src="{{site.baseurl}}/img/banners-two-2.jpg"{% endif %}  {% if forloop.index == 3 %}src="{{site.baseurl}}/img/banners-two-5.jpg"{% endif %}  alt="" class="banners-two__item_link_img">
         </a>
         <!-- banners-two__item_link -->
         {% endif %}
@@ -312,9 +252,29 @@
     </div>
     <!-- banners-two -->
   </div>
-<!-- container -->
+  <!-- container -->
 </section>
 <!-- banners-two-wrap -->
+
+<section class="services-wrap">
+  <div class="container">
+    <div class="services">
+    {% for i in (1..4) %}
+      <div class="services__item">
+        <i class="fa fa-iconname"></i>
+        <div class="services__item_info">
+          <a href="" class="services__item_info_headline">Название сервиса {{i}}</a>
+          <span class="services__item_info_subheadline">Подназвание сервиса {{i}}</span>
+        </div>
+      </div>
+      <!-- services__item_info -->
+      {% endfor %}
+    </div>
+    <!-- services__item -->
+  </div>
+  <!-- container -->
+</section>
+<!-- services-wrap -->
 
 <script src="{{" /js/jquery-1.8.3.min.js " | prepand: site.baseurl }}"></script>
 <script src="{{" /js/functions.js " | prepand: site.baseurl}}"></script>

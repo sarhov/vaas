@@ -281,6 +281,11 @@ a {
 // carousels
 .carousels-wrap{
     margin-bottom: 40px;
+    &.single{
+        .carousels__box_title.isActive{
+            border-top-color: #f05423 ;
+        }
+    }
 }
 
 .carousels{
@@ -299,7 +304,7 @@ a {
                 border-color:#7bbd42 #e4e5e7;
                 position: relative;
                 z-index: 2;
-                &_action{
+                button{
                     color: #7bbd42 !important;
                 }
             }
@@ -513,18 +518,26 @@ a {
 
 .banners-two{
     @include inner;
-    @include clearfix;
+    // @include clearfix;
     &-inner{
         margin: 0 -10px;
+        @include clearfix;
     }
     &__item{
         width: 25%;
         float: left;
+        padding: 0 10px;
+        &_small &_link{
+            margin-bottom: 13px;
+        }
         &_link{
             display: block;
+            @include boxshadow;
+            border: 1px solid #e9e9e9;
             &_img{
                 width: 100%;
                 height: auto;
+                display: block;
             }
         }
     }
