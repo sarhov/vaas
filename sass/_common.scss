@@ -30,6 +30,12 @@ a {
     display: none;
 }
 
+.container{
+    max-width: 1190px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
 .main-header-wrapper {
     background: whitesmoke;
     width: 100%;
@@ -499,3 +505,28 @@ a {
     }
 }
 // END wide banners
+
+// banners-two
+.banners-two-wrap{
+    margin-bottom: 30px;
+}
+
+.banners-two{
+    @include inner;
+    @include clearfix;
+    &-inner{
+        margin: 0 -10px;
+    }
+    &__item{
+        width: 25%;
+        float: left;
+        &_link{
+            display: block;
+            &_img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+// END banners-two
