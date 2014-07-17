@@ -26,11 +26,11 @@ a {
     text-decoration: none;
 }
 
-.hide{
+.hide {
     display: none;
 }
 
-.container{
+.container {
     max-width: 1190px;
     padding: 0 10px;
     margin: 0 auto;
@@ -150,6 +150,7 @@ a {
         }
     }
 }
+
 // END search
 
 // shop-cart
@@ -183,6 +184,7 @@ a {
         }
     }
 }
+
 // END shop-cart
 
 // mini-cart
@@ -194,23 +196,25 @@ a {
     background: #fff;
     border: 1px solid #e4e5e7;
 }
+
 // END mini-cart
 
 // main-nav
-.main-nav-wrapper{
+.main-nav-wrapper {
     margin-bottom: 20px;
 }
-.main-nav{
+
+.main-nav {
     @include inner;
     background: #2E3A47;
-    &__list{
+    &__list {
         list-style-type: none;
         @include clearfix;
-        &_item{
+        &_item {
             position: relative;
             float: left;
             // max-width: 200px;
-            &_link{
+            &_link {
                 color: #fff;
                 font-size: 12px;
                 text-transform: uppercase;
@@ -220,54 +224,57 @@ a {
         }
     }
 }
+
 // END main-nav
 
 // slider
-.slider{
+.slider {
     @include inner;
     height: 500px;
     text-align: center;
     position: relative;
     border: 1px solid #ccc;
     margin-bottom: 20px;
-    &__img-tmp{
-        max-width:100%;
+    &__img-tmp {
+        max-width: 100%;
         height: auto;
         max-height: 100%;
         @include abscenter;
     }
-    .temp-text{
+    .temp-text {
         @include abscenter;
         font-size: 27px;
         text-shadow: 0 0 4px #444;
         padding-top: 50px;
     }
 }
+
 // END slider
 
 // banners
-.banners-wrap{
+.banners-wrap {
     margin-bottom: 40px;
 }
-.banners{
+
+.banners {
     @include inner;
     @include clearfix;
     // margin: 0 -10px;
-    &-inner{
+    &-inner {
         margin: 0 -10px;
     }
-    &__item{
+    &__item {
         padding: 0 10px;
         float: left;
         width: 25%;
-        &_link{
+        &_link {
             display: block;
             width: 100%;
             position: relative;
             // background: #9c0;
             // height: 200px;
             @include boxshadow;
-            &_img{
+            &_img {
                 max-width: 100%;
                 display: block;
                 width: 100%;
@@ -276,42 +283,43 @@ a {
         }
     }
 }
+
 // END banners
 
 // carousels
-.carousels-wrap{
+.carousels-wrap {
     margin-bottom: 40px;
-    &.single{
-        .carousels__box_title.isActive{
-            border-top-color: #f05423 ;
+    &.single {
+        .carousels__box_title.isActive {
+            border-top-color: #f05423;
         }
     }
 }
 
-.carousels{
+.carousels {
     @include inner;
     // height: 350px;
-    &__box{
+    &__box {
         position: relative;
         height: 390px;
-        &_title{
+        &_title {
             float: left;
             margin-right: -1px;
             border-width: 3px 1px 0 1px;
             border-style: solid;
             border-color: transparent;
-            &.isActive, &:hover{
-                border-color:#7bbd42 #e4e5e7;
+            &.isActive, &:hover {
+                border-color: #7bbd42 #e4e5e7;
                 position: relative;
                 z-index: 2;
-                button{
+                button {
                     color: #7bbd42 !important;
                 }
             }
-            &:not(.isActive):hover{
+            &:not(.isActive):hover {
                 z-index: 1;
             }
-            &_action{
+            &_action {
                 color: #2e3a47;
                 font-weight: 600;
                 text-transform: uppercase;
@@ -323,38 +331,39 @@ a {
                 font-size: 14px;
             }
         }
-    &_item{
-        position: absolute;
-        top: 42px;
-        left: 0;
-        width: 100%;
-        height: calc(100% - 42px);
-        border: 1px solid #e4e5e7;
-        z-index: 1;
-        overflow: hidden;
-        &_action{
+        &_item {
             position: absolute;
-            right: 0;
-            bottom: calc(100% + 11px);
+            top: 42px;
+            left: 0;
+            width: 100%;
+            height: calc(100% - 42px);
+            border: 1px solid #e4e5e7;
+            z-index: 1;
+            overflow: hidden;
+            &_action {
+                position: absolute;
+                right: 0;
+                bottom: calc(100% + 11px);
+            }
         }
-    }    
     }
 }
+
 // END carousels
 
 // carousel-content
-.carousel-content{
+.carousel-content {
     @include clearfix;
     height: 100%;
     margin: 0 -10px;
-    &__item{
+    &__item {
         position: relative;
         float: left;
         width: 25%;
         padding: 0 10px;
         height: 100%;
         border-left: 1px solid #ccc;
-        &_quick-view{
+        &_quick-view {
             position: absolute;
             top: 50%;
             margin-top: -50px;
@@ -362,7 +371,7 @@ a {
             margin-left: -31px;
             width: 65px;
             height: 30px;
-            &_action{
+            &_action {
                 @include trs;
                 opacity: 0;
                 visibility: hidden;
@@ -372,50 +381,50 @@ a {
                 padding: 0;
                 display: inline-block;
             }
-            &_product{
+            &_product {
                 -webkit-transform: translate3d(-20px, 0, 0);
                 -ms-transform: translate3d(-20px, 0, 0);
                 -o-transform: translate3d(-20px, 0, 0);
                 transform: translate3d(-20px, 0, 0);
-            }            
-            &_images{
+            }
+            &_images {
                 -webkit-transform: translate3d(20px, 0, 0);
                 -ms-transform: translate3d(20px, 0, 0);
                 -o-transform: translate3d(20px, 0, 0);
                 transform: translate3d(20px, 0, 0);
             }
         }
-        &_img-link{
+        &_img-link {
             position: relative;
             height: 200px;
             width: 100%;
             display: block;
-            &-img{
+            &-img {
                 @include abscenter;
                 @include trs;
                 opacity: 1;
                 visibility: visible;
             }
-            &-img_second{
+            &-img_second {
                 visibility: hidden;
                 opacity: 0;
             }
-            &:hover &-img_first{
+            &:hover &-img_first {
                 opacity: 0;
                 visibility: hidden;
             }
-            &:hover &-img_second{
+            &:hover &-img_second {
                 opacity: 1;
                 visibility: visible;
             }
         }
-        &_buyzone{
+        &_buyzone {
             display: block;
             padding: 0 20px;
-            &_action{
+            &_action {
                 @include hovbutton;
             }
-            &_compare{
+            &_compare {
                 width: 30px;
                 padding: 0;
                 @include trs;
@@ -424,50 +433,50 @@ a {
                 -o-transform: scale(0);
                 transform: scale(0);
             }
-        }    &:hover &_buyzone_compare{
-        -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-        -o-transform: scale(1);
-        transform: scale(1);
-    }
-    &:hover &_quick-view_action{
-        opacity: 1;
-        visibility: visible;
-    }   
-     &:hover &_quick-view_product{
-        opacity: 1;
-        visibility: visible;
-        -webkit-transform: translate3d(0,0,0);
-        -ms-transform: translate3d(0,0,0);
-        -o-transform: translate3d(0,0,0);
-        transform: translate3d(0,0,0);
-    }   
-      &:hover &_quick-view_images{
-        opacity: 1;
-        visibility: visible;
-        -webkit-transform: translate3d(0,0,0);
-        -ms-transform: translate3d(0,0,0);
-        -o-transform: translate3d(0,0,0);
-        transform: translate3d(0,0,0);
-    }
-    &_title{
-        margin-bottom: 10px;
-        padding: 0 20px;
-        &_link{
-            color: #2e3a47;
-            font-weight: 600;
-            text-transform: capitalize;
-            font-size: 14px;
-            &:hover{
+        }
+        &:hover &_buyzone_compare {
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+            transform: scale(1);
+        }
+        &:hover &_quick-view_action {
+            opacity: 1;
+            visibility: visible;
+        }
+        &:hover &_quick-view_product {
+            opacity: 1;
+            visibility: visible;
+            -webkit-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+        &:hover &_quick-view_images {
+            opacity: 1;
+            visibility: visible;
+            -webkit-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+        &_title {
+            margin-bottom: 10px;
+            padding: 0 20px;
+            &_link {
                 color: #2e3a47;
+                font-weight: 600;
+                text-transform: capitalize;
+                font-size: 14px;
+                &:hover {
+                    color: #2e3a47;
+                }
             }
         }
-
-    }
-      &_prices{
+        &_prices {
             margin-bottom: 20px;
             padding: 0 20px;
-            &_old-price{
+            &_old-price {
                 color: #999999;
                 font-size: 16px;
                 font-weight: 600;
@@ -476,65 +485,69 @@ a {
                 margin-top: -2px;
                 display: inline-block;
             }
-            &_new-price{
+            &_new-price {
                 color: #f05423;
                 font-size: 14px;
                 vertical-align: middle;
                 font-weight: 600;
             }
         }
-    }   
+    }
 }
+
 // END carousel-content
 
 // wide-banners
-.wide-banners-wrap{
+.wide-banners-wrap {
     margin-bottom: 30px;
 }
-.wide-banners{
+
+.wide-banners {
     @include inner;
-    &__item{
+    &__item {
         position: relative;
         @include boxshadow;
         float: left;
         // width: 45%;
         // height: 100px;
-        &_img{
+        &_img {
             // @include abscenter;
             // width: 100%;
             display: block;
         }
-        &:last-child{
+        &:last-child {
             // width: 55%;
+       
         }
     }
 }
+
 // END wide banners
 
 // banners-two
-.banners-two-wrap{
+.banners-two-wrap {
     margin-bottom: 13px;
 }
 
-.banners-two{
+.banners-two {
     @include inner;
     // @include clearfix;
-    &-inner{
+    &-inner {
         margin: 0 -10px;
         @include clearfix;
     }
-    &__item{
+    &__item {
         width: 25%;
         float: left;
         padding: 0 10px;
-        &_small &_link{
+        &_small &_link {
             margin-bottom: 13px;
         }
-        &_link{
+        &_link {
             display: block;
             @include boxshadow;
             border: 1px solid #e9e9e9;
-            &_img{
+            &_img {
                 width: 100%;
                 height: auto;
                 display: block;
@@ -542,48 +555,147 @@ a {
         }
     }
 }
+
 // END banners-two
 
 // serveices
-.services-wrap{
+.services-wrap {
     margin-bottom: 30px;
 }
-.services{
+
+.services {
     // margin: 0 -10px;
     @include clearfix;
-     background: none repeat scroll 0 0 #f5f5f5;
+    background: none repeat scroll 0 0 #f5f5f5;
     border: 1px solid #e4e5e7;
-    &__item{
+    &__item {
         float: left;
         width: 25%;
         padding: 35px 10px 35px 25px;
-        &:hover .fa, &:hover &_info_headline{
+        &:hover .fa, &:hover &_info_headline {
             color: #7bbd42;
             @include trs;
         }
-        .fa{
+        .fa {
             float: left;
             padding-right: 10px;
             font-size: 60px;
             color: #2e3a47;
         }
-        &_info{
+        &_info {
             overflow: hidden;
             line-height: 1.4;
             margin-top: 5px;
-            &_headline{
+            &_headline {
                 // color: #2e3a47;
                 text-transform: uppercase;
                 font-size: 18px;
             }
-            &_subheadline{
+            &_subheadline {
                 color: #8c8c8c;
                 font-size: 14px;
             }
         }
     }
-    &__item:not(:first-child){
+    &__item:not(:first-child) {
         border-left: 1px solid #e4e5e7;
     }
 }
+
 // END services
+
+// subscribe
+.pre-footer-wrap {
+    margin-bottom: 40px;
+}
+
+.pre-footer {
+    background: #524354;
+    padding: 25px;
+    @include clearfix;
+    &__subscribe {
+        float: left;
+        width: 63%;
+        padding-right: 10px;
+        .fa {
+            float: left;
+            font-size: 35px;
+            padding-right: 13px;
+        }
+        &_text {
+            float: left;
+            margin-right: 20px;
+            color: #fff;
+            span {
+                display: block;
+            }
+            &_headline {
+                text-transform: uppercase;
+                font-size: 18px;
+            }
+            &_subheadline {
+                font-size: 13px;
+            }
+        }
+        &_form {
+            width: 60%;
+            float: left;
+            position: relative;
+            &_input {
+                padding: 0 110px;
+                height: 40px;
+                border: none;
+                border-radius: 30px;
+                background: #fff;
+                width: 100%;
+                &:focus {
+                    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+                }
+            }
+            &_submit {
+                position: absolute;
+                right: 0;
+                top: 0;
+                border-radius: 0 30px 30px 0;
+                background: #7BBD42;
+                border: none;
+                height: 40px;
+                text-transform: uppercase;
+                color: #fff;
+            }
+        }
+    }
+    &__share {
+        $share: facebook #474747, vk #d86043, twitter #d86043, rss #f19f35, youtube #57bc8a, skype #4ea8d7;
+        width: 37%;
+        float: left;
+        color: #fff;
+        &_text {
+            padding-right: 20px;
+            line-height: 42px;
+            text-transform: uppercase;
+            float: left;
+        }
+        &_icons {
+            float: left;
+            &_link {
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                background: #fff;
+                display: block;
+                float: left;
+                margin-right: 5px;
+                line-height: 35px;
+                text-align: center;
+                @each $index in $share {
+                    &_#{nth($index, 1)}:hover {
+                        background: nth($index, 2);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// END subscribe
