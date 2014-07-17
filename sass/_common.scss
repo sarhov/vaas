@@ -692,7 +692,7 @@ a {
                 @each $index in $share {
                     &_#{nth($index, 1)}:hover {
                         background: nth($index, 2);
-                        color: #fff !important;   
+                        color: #ffffff;   
                     }
                 }
             }
