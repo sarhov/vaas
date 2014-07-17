@@ -1,86 +1,67 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
+/*
+Syntax error: File to import not found or unreadable: mixins.
+              Load paths:
+                C:/Users/sarhov/Documents/GitHub/VS/sass
+                C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets
+                Compass::SpriteImporter
+        on line 8 of C:/Users/sarhov/Documents/GitHub/VS/sass/screen.scss
 
-/* line 22, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
-
-/* line 24, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 26, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 32, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 116, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
-
-/* line 1, ../sass/_common.scss */
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* line 5, ../sass/_common.scss */
-.clearfix {
-  *zoom: 1;
-}
-/* line 38, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+Backtrace:
+C:/Users/sarhov/Documents/GitHub/VS/sass/screen.scss:8
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/import_node.rb:66:in `rescue in import'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/import_node.rb:45:in `import'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:283:in `visit_import'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/stack.rb:79:in `block in with_base'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/stack.rb:121:in `with_frame'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/stack.rb:79:in `with_base'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:152:in `visit'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:151:in `visit'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/tree/root_node.rb:20:in `render'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/sass-3.3.8/lib/sass/engine.rb:274:in `render'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:171:in `block (2 levels) in compile'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:153:in `timed'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:166:in `block in compile'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-1.0.0.alpha.19/lib/compass/logger.rb:46:in `red'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:165:in `compile'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:144:in `compile_if_required'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:129:in `block (2 levels) in run'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:127:in `each'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:127:in `block in run'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:153:in `timed'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:126:in `run'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-1.0.0.alpha.19/lib/compass/watcher/compiler.rb:24:in `compile'
+C:/jekyll/ruby/lib/ruby/2.0.0/forwardable.rb:171:in `compile'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-1.0.0.alpha.19/lib/compass/watcher/project_watcher.rb:101:in `sass_modified'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-1.0.0.alpha.19/lib/compass/watcher/project_watcher.rb:89:in `sass_callback'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-1.0.0.alpha.19/lib/compass/watcher/watch.rb:14:in `call'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-1.0.0.alpha.19/lib/compass/watcher/watch.rb:14:in `run_callback'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-1.0.0.alpha.19/lib/compass/watcher/project_watcher.rb:69:in `block in listen_callback'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-1.0.0.alpha.19/lib/compass/watcher/project_watcher.rb:66:in `each'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-1.0.0.alpha.19/lib/compass/watcher/project_watcher.rb:66:in `listen_callback'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/listen-1.1.6/lib/listen/listener.rb:236:in `call'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/listen-1.1.6/lib/listen/listener.rb:236:in `on_change'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/listen-1.1.6/lib/listen/listener.rb:271:in `block in initialize_adapter'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/listen-1.1.6/lib/listen/adapter.rb:244:in `call'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/listen-1.1.6/lib/listen/adapter.rb:244:in `report_changes'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/listen-1.1.6/lib/listen/adapter.rb:313:in `poll_changed_directories'
+C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/listen-1.1.6/lib/listen/adapter.rb:289:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: mixins.\A               Load paths:\A                 C:/Users/sarhov/Documents/GitHub/VS/sass\A                 C:/jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets\A                 Compass::SpriteImporter\A         on line 8 of C:/Users/sarhov/Documents/GitHub/VS/sass/screen.scss"; }
