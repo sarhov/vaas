@@ -11,7 +11,6 @@ select:focus,
 textarea:focus,
 button:focus {
     outline: none;
-    
 }
 
 body {
@@ -667,7 +666,7 @@ a {
         }
     }
     &__share {
-        $share: facebook #474747, vk #d86043, twitter #d86043, rss #f19f35, youtube #57bc8a, skype #4ea8d7;
+        $share: facebook #346da6, vk #d86043, twitter #d86043, rss #f19f35, youtube #57bc8a, skype #4ea8d7;
         width: 37%;
         float: left;
         color: #fff;
@@ -689,9 +688,11 @@ a {
                 margin-right: 5px;
                 line-height: 35px;
                 text-align: center;
+                font-size: 20px;
                 @each $index in $share {
                     &_#{nth($index, 1)}:hover {
                         background: nth($index, 2);
+                        color: #fff;
                     }
                 }
             }
