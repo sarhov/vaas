@@ -665,7 +665,7 @@ a {
             }
         }
     }
-    &__share {
+    &__share { 
         $share: facebook #346da6, vk #d86043, twitter #d86043, rss #f19f35, youtube #57bc8a, skype #4ea8d7;
         width: 37%;
         float: left;
@@ -692,10 +692,11 @@ a {
                 @each $index in $share {
                     &_#{nth($index, 1)}:hover {
                         background: nth($index, 2);
-                        color: #fff;
+                        color: #fff !important;   
                     }
                 }
             }
+
         }
     }
 }
