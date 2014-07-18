@@ -321,6 +321,66 @@
 </section> 
 <!-- pre-footer-wrap -->
 
+<section class="footer-boxes-wrap">
+  <div class="container">
+    <div class="footer-boxes clearfix">
+      {% for i in (1..3) %}
+      <div class="footer-boxes__item">
+        <h4 class="footer-boxes__item_headline">
+          Название меню {{i}}
+        </h4>
+        <!-- footer-boxes__item_headline -->
+        <div class="footer-box">
+          <nav class="footer-box__navigation footer-box__content">
+          {% for i in (1..7) %}
+            <a href="" class="footer-box__navigation_link {% if forloop.index  ==  2 %} isActive {% endif %}">
+              <i class="fa fa-stop"></i>  
+              <span class="footer-box__navigation_link_text">
+                пункт меню {{i}}
+              </span>
+            </a>
+            <!-- footer-box__navigation_link -->
+            {% endfor %}
+          </nav>
+          <!-- footer0box__content -->
+        </div>
+        <!-- footer-box -->
+      </div>
+      <!-- footer-boxes__item -->
+      {% endfor %}
+
+      <div class="footer-boxes__item">
+        <h4 class="footer-boxes__item_headline">
+          О нас
+        </h4>
+        <!-- footer-boxes__item_headline -->
+        <div class="footer-box">
+          <div class="footer-box__content footer-box__information">
+            <div class="footer-box__information_text editor">
+              <p>
+                Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Коварных мир диких, жизни безорфографичный раз прямо встретил строчка рукопись.
+              </p>
+
+              <p>
+                Телефон: 374 94 77 33 02
+              </p>
+              <p>
+                Почта: sarhov@sarhov.com
+              </p>
+            </div>
+          </div>
+          <!-- footer-box__content -->
+        </div>
+        <!-- footer-box -->
+      </div>
+      <!-- footer-boxes__item -->
+    </div>
+    <!-- footer-boxes -->
+  </div>
+  <!-- container -->
+</section>
+<!-- footer-boxes-wrap-->
+
 <script src="{{"/js/jquery-1.8.3.min.js " | prepand: site.baseurl }}"></script>
 <script src="{{"/js/functions.js " | prepand: site.baseurl}}"></script>
 

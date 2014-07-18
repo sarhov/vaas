@@ -974,3 +974,72 @@ a {
   background: #00adf2;
   color: #fff;
 }
+
+/* line 709, ../sass/_common.scss */
+.footer-boxes-wrap {
+  padding-bottom: 30px;
+}
+
+/* line 714, ../sass/_common.scss */
+.footer-boxes__item {
+  float: left;
+  width: 25%;
+}
+/* line 717, ../sass/_common.scss */
+.footer-boxes__item:not(:last-child) {
+  padding-right: 20px;
+}
+/* line 720, ../sass/_common.scss */
+.footer-boxes__item:last-child {
+  float: right;
+}
+/* line 723, ../sass/_common.scss */
+.footer-boxes__item_headline {
+  color: #2e3a47;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0 0 20px;
+  text-transform: uppercase;
+}
+
+/* line 733, ../sass/_common.scss */
+.footer-box {
+  font-size: 13px;
+  color: #2e3a47;
+}
+/* line 737, ../sass/_common.scss */
+.footer-box__navigation_link {
+  display: block;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  text-transform: capitalize;
+  margin-bottom: 4px;
+}
+/* line 742, ../sass/_common.scss */
+.footer-box__navigation_link .fa {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 4px;
+  margin-right: 5px;
+  color: inherit;
+}
+/* line 749, ../sass/_common.scss */
+.footer-box__navigation_link_text {
+  vertical-align: middle;
+  display: inline-block;
+}
+/* line 753, ../sass/_common.scss */
+.footer-box__navigation_link.isActive, .footer-box__navigation_link:hover {
+  color: #7bbd42;
+}
+/* line 761, ../sass/_common.scss */
+.footer-box__information {
+  text-align: justify;
+}
+
+/* line 2, ../sass/_editor.scss */
+.editor p {
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
