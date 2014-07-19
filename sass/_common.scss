@@ -175,6 +175,10 @@ a {
     &__text {
         float: left;
         overflow: hidden;
+        &_count{
+            color: #8c8c8c;
+            font-size: 12px;
+        }
         &_title {
             display: block;
             font-weight: bold;
@@ -226,6 +230,12 @@ a {
 }
 
 // END main-nav
+
+// breadcrumbs
+.breadcrumbs-wrap{
+    margin-bottom: 20px;
+}
+// END breadcrumbs
 
 // slider
 .slider {
