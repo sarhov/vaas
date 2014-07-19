@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -379,6 +380,35 @@
   <!-- container -->
 </section>
 <!-- footer-boxes-wrap-->
+
+<section class="footer-wrap">
+  <div class="container">
+    <footer class="footer">
+      <a href="#" class="to-top jsToTop">
+        <i class="fa fa-angle-up"></i>
+        <span class="to-top_text">На вверх</span>
+      </a>
+      <div class="footer__copy">
+        <div class="footer__copy_text">
+          Сделано в <a href="" class="footer__copy_text_link">название магазина</a>
+        </div>
+        <!-- footer__copy_text -->
+        <div class="footer__copy_text">
+          Все права защищены &copy;
+          <time datetime="{{ site.time }}">{{ site.time | date: "%Y" }}</time>
+        </div>
+        <!-- footer__copy_text -->
+      </div>
+      <!-- footer__copy -->
+      <div class="footer__payments">
+     
+      </div>
+    </footer>
+    <!-- footer -->
+  </div>
+  <!-- container -->
+</section>
+<!-- footer-wrap -->
 
 <script src="{{"/js/jquery-1.8.3.min.js " | prepand: site.baseurl }}"></script>
 <script src="{{"/js/functions.js " | prepand: site.baseurl}}"></script>

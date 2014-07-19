@@ -666,12 +666,12 @@ a {
             }
         }
     }
-    &__share { 
-        $share: facebook #346da6,  twitter #4c91d7, rss #f05423, youtube #b61f26, skype #00adf2;
+    &__share {
+        $share: facebook #346da6, twitter #4c91d7, rss #f05423, youtube #b61f26, skype #00adf2;
         width: 33%;
         float: left;
         color: #fff;
-        &_text {   
+        &_text {
             padding-right: 20px;
             line-height: 42px;
             text-transform: uppercase;
@@ -694,11 +694,10 @@ a {
                 @each $index in $share {
                     &_#{nth($index, 1)}:hover {
                         background: nth($index, 2);
-                        color: #fff;   
+                        color: #fff;
                     }
                 }
             }
-
         }
     }
 }
@@ -706,60 +705,95 @@ a {
 // END subscribe
 
 // footer-boxes
-.footer-boxes-wrap{
+.footer-boxes-wrap {
     padding-bottom: 30px;
 }
 
-.footer-boxes{
-    &__item{
+.footer-boxes {
+    &__item {
         float: left;
         width: 25%;
-        &:not(:last-child){
-            padding-right: 20px; 
-            }  
-        &:last-child{
+        &:not(:last-child) {
+            padding-right: 20px;
+        }
+        &:last-child {
             float: right;
-        }     
-        &_headline{
+        }
+        &_headline {
             color: #2e3a47;
-font-size: 14px;
-font-weight: 600;
-padding: 0 0 20px;
-text-transform: uppercase;
-        }    
+            font-size: 14px;
+            font-weight: 600;
+            padding: 0 0 20px;
+            text-transform: uppercase;
+        }
     }
 }
 
-.footer-box{
+.footer-box {
     font-size: 13px;
     color: #2e3a47;
-    &__navigation{
-        &_link{
+    &__navigation {
+        &_link {
             display: block;
             @include trs;
             text-transform: capitalize;
             margin-bottom: 4px;
-            .fa{
+            .fa {
                 display: inline-block;
                 vertical-align: middle;
                 font-size: 4px;
                 margin-right: 5px;
                 color: inherit;
             }
-            &_text{
+            &_text {
                 vertical-align: middle;
                 display: inline-block;
             }
-          &.isActive, &:hover{
-            color:#7bbd42;
+            &.isActive, &:hover {
+                color: #7bbd42;
+            }
         }
-        }
-
-      
     }
-
-    &__information{
+    &__information {
         text-align: justify;
     }
 }
 // END footer boxes
+
+
+// footer
+.footer-wrap{
+    padding: 30px;
+    background:#FCFCFC;
+    border-top: 1px solid #E8E9EB;
+}
+.to-top{
+    position: absolute;
+    left: 0;
+    top: 0;
+    &_text{
+        vertical-align: middle;
+    }
+}
+.footer{
+    @include clearfix;
+    position: relative;
+    a{
+        color: #7bbd42;
+    }
+    &__copy{
+        float: left;
+        padding-top: 25px;
+        // margin-bottom: 10px;
+        &_text:not(:last-child){
+            margin-bottom: 5px;
+        }
+    }
+    &__payments{
+        float: right;
+       background:url('../img/payments.png') center right no-repeat;
+       width: 300px;
+       height: 50px;
+    }
+}
+// END footer
