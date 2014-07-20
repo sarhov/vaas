@@ -20,7 +20,7 @@ title: Карточка товара
 
 			<div class="product__info">
 
-				<div class="prodict__info_title product__info_line">
+				<div class="product__info_title product__info_line">
 					<h1 class="product__info_title_text">Название продукта</h1>
 				</div>
 				<!-- product__info_title -->
@@ -100,7 +100,7 @@ title: Карточка товара
 									<i class="fa fa-plus"></i>
 								</button>
 								<button class="product-quantity__box_action jsProductQuantityMinus">
-									i.fa.fa-minus
+									<i class="fa fa-minus"></i>
 								</button>
 							</div>
 							<!-- product-quantity-box -->
@@ -121,13 +121,68 @@ title: Карточка товара
 					<!-- product-buy-actions__planning -->
 				</div>
 				<!-- product-buy-actions -->
-
-
 			</div>
 			<!-- product__info -->
+
+
 		</article>
 		<!-- product -->
+
+
+
 	</div>
 	<!-- container -->
 </div>
 <!-- product-wrap -->
+
+	<section class="product-tabs-wrap">
+		<div class="container">
+			<div class="product-tabs">
+				<div class="products-tabs__controls">
+					<button class="products-tabs__controls_item jsProductTabItem" data-href="tab-content_1">
+						Подробная информация
+					</button>
+					<button class="products-tabs__controls_item jsProductTabItem" data-href="tab-content_2">
+						Характеристики
+					</button>
+					<button class="products-tabs__controls_item jsProductTabItem" data-href="tab-content_3">
+						Комплектация
+					</button>
+
+					<button class="products-tabs__controls_item jsProductTabItem" data-href="tab-content_4">
+						Полезные ссылки и файлы
+					</button>
+
+						<button class="products-tabs__controls_item jsProductTabItem" data-href="tab-content_4">
+						Отзывы
+					</button>
+				</div>
+				<!-- product-tabs__controls -->
+
+				<section class="product-tabs__contents">
+					
+					<article class="product-tabs__contents_item jsProductTabContentItem" data-name="tab-content_1">
+						<h1 class="product-tabs__contents_item_hedline">Название таба</h1>
+						<div class="product-tabs__contents_item_content editor">
+							Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. За всемогущая точках, агенство знаках, послушавшись журчит решила проектах ipsum мир необходимыми себя от всех использовало переулка повстречался, рыбными рот. Заглавных.
+							<h1 class="product-tabs__content_item_headline">Еще одно название</h1>
+						</div>
+					</article>
+					<!-- product-tabs__contents_item -->
+
+				</section>
+				<!-- product-tabs__contents -->
+			</div>
+			<!-- product-tabs -->
+		</div>
+		<!-- container -->
+	</section>
+	<!-- product-tabs-wrap -->
+
+	<section class="product-carousel-wrap">
+		<div class="container-temp">
+			<div class="product-carousel">
+				{% include carousel.html type="single-product" %}
+			</div>
+		</div>
+	</section>
