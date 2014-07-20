@@ -289,6 +289,7 @@ a:hover {
             margin: 0 0 12px;
             position: relative;
             text-transform: uppercase;
+            text-transform: uppercase;
         }
     }
     &-review-info{
@@ -322,6 +323,45 @@ a:hover {
           }
           }
 
+    }
+    &-prices{
+        font-size: 18px;
+        @include clearfix;
+        font-weight: 600;
+        &__old-price{
+            color: #999999;
+            text-decoration: line-through;
+            margin-right: 10px ;
+        }
+        &__new-price{
+            color: #f05423;
+        }
+    }
+
+    &-availability{
+        color: #8c8c8c;
+                vertical-align: middle;
+
+        font-size: 13px;
+
+            .fa {
+                color: #7BBD42;
+                font-size: 22px;
+                margin-right: 5px;
+                vertical-align: middle;
+            }
+        
+    }
+
+    &-short-description{
+        &__headline{
+            font-weight: normal;
+        color: #2e3a47;
+        text-transform: uppercase;
+        font-size: 18px;
+        margin-bottom: 15px;
+    
+        }
     }
 }
 
