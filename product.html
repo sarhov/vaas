@@ -8,11 +8,15 @@ title: Карточка товара
 		<article class="product" id="product_1234">
 			<div class="product__image">
 				<div class="product__image_big">
-					
+					<img src="{{site.baseurl}}/img/product-big-img.jpg" alt="product.name" class="product__image_big_img">
 				</div>
 				<!-- product__image_big -->
 				<div class="product__image_others">
-					
+					{% for i in (1..7) %}
+						<a href="product-big-img" class="product__image_others_item">
+							<img src="{{site.baseurl}}/img/product-thumb-{{i}}.jpg" alt="product-name" class="product__image_others_item_img">
+						</a>
+					{% endfor %}
 				</div>
 				<!-- product__image_others -->
 			</div>
@@ -25,16 +29,16 @@ title: Карточка товара
 				</div>
 				<!-- product__info_title -->
 
-				<div class="product-review-info">
+				<div class="product-review-info product__info_line">
 					<div class="product-review-info__rating">
-						<span class="product-review-info__rating_stars">здесь идет рейтинг зведочками</span> |
-						<span class="product-review-info__rating_text">Количество отвывов (3) </span>
+						<span class="product-review-info__rating_stars"></span> 
+						<a href="to-reviews" class="product-review-info__rating_text">Количество отвывов (3) </a>
 					</div>
 					<!-- product-review-info__rating -->
 					<div class="product-review-info__rating_actions">
-						<button class="product-review-info__rating_actions_item jsAddReview">
+						<a href="addreviews" class="product-review-info__rating_actions_item jsAddReview">
 							Добавить отзыв
-						</button>
+						</a>
 					</div>
 					<!-- product-review-info__rating -->
 				</div>

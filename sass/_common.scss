@@ -25,7 +25,10 @@ a {
     color: #777777;
     text-decoration: none;
 }
-
+a:hover {
+    color: #f05423;
+    text-decoration: none;
+}
 .hide {
     display: none;
 }
@@ -175,7 +178,7 @@ a {
     &__text {
         float: left;
         overflow: hidden;
-        &_count{
+        &_count {
             color: #8c8c8c;
             font-size: 12px;
         }
@@ -232,10 +235,97 @@ a {
 // END main-nav
 
 // breadcrumbs
-.breadcrumbs-wrap{
+.breadcrumbs-wrap {
     margin-bottom: 20px;
 }
+
 // END breadcrumbs
+
+// product
+
+.product-wrap {
+    margin-bottom: 20px;
+}
+
+.product {
+    @include clearfix;
+    padding: 20px;
+    border: 1px solid #E4E5E7;
+    //temp
+    &__image {
+        float: left;
+        width: 45%;
+        padding-right: 10px;
+        &_big {
+            margin-bottom: 10px;
+            &_img {
+                max-width: 100%;
+            }
+        }
+        &_others {
+            width: 100%;
+            overflow: hidden;
+        }
+        &_item {
+            float: left;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            &_img {
+                @include abscenter;
+            }
+        }
+    }
+    &__info {
+        float: left;
+        width: 55%;
+        &_line {
+            margin-bottom: 15px;
+        }
+        &_title {
+            color: #2e3a47;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0 0 12px;
+            position: relative;
+            text-transform: uppercase;
+        }
+    }
+    &-review-info{
+        font-size: 13px;
+        @include clearfix;
+        vertical-align: middle;
+    &__rating{
+        float: left;
+        &_text{
+        margin-right: 15px;  
+        border-right: 1px solid #ccc;  
+        padding-right: 15px;
+        display: inline-block;
+        vertical-align: middle;
+            }
+        // padding-top: 1px;
+        // padding-bottom: 1px;
+                &_actions{
+            float: left;
+            &_item{
+                vertical-align: middle;
+            }
+          
+        }    
+            &_stars{
+            width: 70px;
+            vertical-align: middle;
+            height: 20px;
+            display: inline-block;
+            background:url('../img/stars.png') center center no-repeat;
+          }
+          }
+
+    }
+}
+
+// END product
 
 // slider
 .slider {
@@ -768,42 +858,45 @@ a {
         text-align: justify;
     }
 }
+
 // END footer boxes
 
-
 // footer
-.footer-wrap{
+.footer-wrap {
     padding: 30px;
-    background:#FCFCFC;
+    background: #FCFCFC;
     border-top: 1px solid #E8E9EB;
 }
-.to-top{
+
+.to-top {
     position: absolute;
     left: 0;
     top: 0;
-    &_text{
+    &_text {
         vertical-align: middle;
     }
 }
-.footer{
+
+.footer {
     @include clearfix;
     position: relative;
-    a{
+    a {
         color: #7bbd42;
     }
-    &__copy{
+    &__copy {
         float: left;
         padding-top: 25px;
         // margin-bottom: 10px;
-        &_text:not(:last-child){
+        &_text:not(:last-child) {
             margin-bottom: 5px;
         }
     }
-    &__payments{
+    &__payments {
         float: right;
-       background:url('../img/payments.png') center right no-repeat;
-       width: 300px;
-       height: 50px;
+        background: url("../img/payments.png") center right no-repeat;
+        width: 300px;
+        height: 50px;
     }
 }
+
 // END footer
