@@ -12,7 +12,7 @@ title: Карточка товара
 				</div>
 				<!-- product__image_big -->
 				<div class="product__image_others">
-					{% for i in (1..7) %}
+					{% for i in (1..6) %}
 						<a href="product-big-img" class="product__image_others_item">
 							<img src="{{site.baseurl}}/img/product-thumb-{{i}}.jpg" alt="product-name" class="product__image_others_item_img">
 						</a>
@@ -51,7 +51,7 @@ title: Карточка товара
 				<!-- product-prices/product__info_line -->
 
 				<div class="product-availability product__info_line">
-					<fa class="fa-iconname"></fa>
+					<!-- <fa class="fa-iconname"></fa> -->
 					<div class="product-availability__text">
 					<i class="fa fa-check-circle"></i>
 						<span class="product-availability__text_key">Доступность: </span>
@@ -60,6 +60,8 @@ title: Карточка товара
 					<!-- product-availability__text -->
 				</div>
 				<!-- product-availability -->
+
+			<!-- <a HREF="mailto:?subject=Посмотри  на 'Название Продукта'&body=Описание продукта и ссылка http://www.geocities.com/wowhtml/">Отправить другу по почте</a> -->
 
 				<div class="product-short-description product__info_line">
 					<h2 class="product-short-description__headline">Короткое описание</h2>
@@ -74,7 +76,7 @@ title: Карточка товара
 				
 				<div class="product-options product__info_line">
 					<div class="product-options__item">
-						<lable class="prodcut-options__item_label">Цвет</lable>
+						<lable class="product-options__item_label">Цвет</lable>
 						<select name="" id="" class="product-options__item_select">
 							<option value="">Название опции</option>
 							<option value="">Название опции</option>
@@ -98,15 +100,15 @@ title: Карточка товара
 					<div class="product-buy-actions__buying">
 
 						<div class="product-quantity">
-							<span class="product-quantity-text"></span>
+							<span class="product-quantity-text">Кол.</span>
 							<div class="product-quantity__box">
 								<input type="text" class="product-quantity__box_input">
-								<button class="product-quantity__box_action jsProductQuantityPlus">
+								<a class="product-quantity__box_action  product-quantity__box_action_plus jsProductQuantityPlus">
 									<i class="fa fa-plus"></i>
-								</button>
-								<button class="product-quantity__box_action jsProductQuantityMinus">
+								</a>
+								<a class="product-quantity__box_action product-quantity__box_action_minus jsProductQuantityMinus">
 									<i class="fa fa-minus"></i>
-								</button>
+								</a>
 							</div>
 							<!-- product-quantity-box -->
 						</div>

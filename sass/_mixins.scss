@@ -72,3 +72,12 @@
         box-shadow: 0 0 0 30px rgba(0, 0, 0, 0.03) inset;
     }
 }
+
+%gl-button{
+    padding: 5px;
+    cursor: pointer;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #fff;
+
+}

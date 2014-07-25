@@ -29,6 +29,9 @@ a:hover {
     color: #f05423;
     text-decoration: none;
 }
+label{
+    color: #555555;
+}
 .hide {
     display: none;
 }
@@ -362,6 +365,76 @@ a:hover {
         margin-bottom: 15px;
     
         }
+    }
+    &-options{
+        // margin-bottom: 20px;
+        &__item_label{
+            font-weight: bold;
+            display: block;
+            margin-bottom: 7px;
+        }
+        &__item_select{
+            padding: 7px;
+            width: 300px;
+            font-size: 14px;
+            background-color: #ffffff;
+            border: 1px solid #d8d8d8;
+            color: #666666;
+        }
+    }
+    &-quantity{
+        width: 130px;
+        float: left;
+        &-text{
+            vertical-align: middle;
+            color: #555;
+            font-size: 14px;
+            margin-right: 5px;
+        }
+        &__box{
+            width: 90px;
+           display: inline-block;
+           vertical-align: middle;
+            border: 1px solid #d8d8d8;
+            position: relative;   
+            &_input{
+            padding: 6px;
+            border: none;
+            padding-right: 30px;
+            width: 100%;
+        }
+        &_action{
+            position: absolute;
+            height: 50%;
+            right: 0;
+            font-size: 8px;
+            text-align: center;
+            color: #8c8c8c;
+            cursor: pointer;
+            background: none;
+            border:none;
+            padding: 0;
+            border-left: 1px solid #d8d8d8;
+            width: 30px;
+            display: block;
+            line-height: 15px;
+            &:hover{
+                color: #7bbd42;
+            }
+            &_plus{
+                top:1px;
+                border-bottom: 1px solid #d8d8d8;
+            }
+
+            &_minus{
+                bottom:-1px;
+            }
+        }
+        }
+    }
+
+    &-buy{
+        @extend %gl-button;
     }
 }
 
