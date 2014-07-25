@@ -433,9 +433,33 @@ label{
         }
     }
 
-    &-buy{
-        @extend %gl-button;
+    &-buy-actions{
+        @include pie-clearfix;
+        &__planning, &__buying{
+            float: left;
+            margin-right: 7px;
+        }
+        &__buying_button{
+            @extend %gl-button;
+            margin-left: 7px;
+            background:#7BBD42;
+            border: 1px solid #77A64D;
+        }
+        &__planning_button{
+            @extend %gl-button;
+            background:#2E3A47;
+            border:1px solid #28313c;
+            &:hover{
+                background:#7BBD42;
+                border-color: #77A64D;
+            }
+        }
+
+
     }
+
+
+
 }
 
 // END product
