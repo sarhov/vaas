@@ -398,10 +398,12 @@ label{
             border: 1px solid #d8d8d8;
             position: relative;   
             &_input{
-            padding: 6px;
+            padding: 4px;
             border: none;
             padding-right: 30px;
             width: 100%;
+            font-size: 16px;
+            color: #3e4141;
         }
         &_action{
             position: absolute;
@@ -463,6 +465,31 @@ label{
 }
 
 // END product
+
+// product-tabs
+
+.product-tabs-wrap{
+    margin-bottom: 20px;
+}
+
+.product-tabs{
+    border:1px solid #e4e5e7;
+    @include clearfix;
+    &__controls{
+        float: left;
+        width: 30%;
+        margin-right: 2%;
+    }
+
+    &__contents{
+        float: left;
+        width: 68%;
+        padding: 20px;
+    }
+
+}
+
+// END product tabs
 
 // slider
 .slider {
