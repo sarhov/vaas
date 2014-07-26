@@ -479,6 +479,44 @@ label{
         float: left;
         width: 30%;
         margin-right: 2%;
+        &_item{
+            display: block;
+            width: 100%;
+            padding: 15px 20px;
+            border:none;
+            border-bottom:1px solid #e4e5e7;
+            border-right: 1px solid #e4e5e7;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            text-transform: uppercase;
+            font-size: 14px;
+            text-align: left;
+            color: #2e3a47;
+            &:before{
+                width: 2px;
+                right: 0px;
+                content:'';
+                height: 100%;
+                // width: 1px;
+                background:#7bbd42;
+                top:0;
+                position: absolute;
+                display: none;
+            } 
+            &:hover, &.active{
+                color: #7bbd42;
+
+            }
+             &:hover:before, &.active:before{
+                display: block;
+            }
+
+            &:last-child{
+                border-bottom: none;
+            }
+        }
+
     }
 
     &__contents{
