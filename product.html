@@ -212,6 +212,74 @@ title: Карточка товара
 								<!-- reviews__list -->
 							</div>
 							<!-- reviews -->
+
+							<div class="reviews-form">
+								<h1 class="reviews-form-headline product-tabs__contents_item_headline">Оставить свой отвыз</h1> 
+								<!-- reviews-form-headline -->	
+								<form action="" class="reviews-form__form">
+									<div class="reviews-form__rating">
+										<h2 class="reviews-form_headline">
+											Оцените товар "Название товара"
+										</h2>
+									
+											<table class="review-table">
+												<tr class="review-table__line">
+												{% for i in (1..6) %}
+													<th class="review-table__line_headline">
+														{% if forloop.index0 > 0 %}
+														    {{forloop.index0}}
+														{% endif %}
+													</th>
+												{% endfor %}
+												</tr>
+												<tr class="review-table__line review-table__line_content">
+												{% for i in (1..6) %}
+													<td class="review-table__line_cell">
+														{% if forloop.index0 < 1 %}
+														    Ваша оценка
+														{% endif %}
+														{% if forloop.index0 > 0 %}
+														    <input type="radio" name="review" value="review_{{forloop.index0}}" class="review-star">
+														{% endif %}
+													</td>
+												{% endfor %}
+													
+
+												</tr>
+											</table>
+											<!-- review-table -->
+									</div>
+										<!-- reviews-form__rating -->
+
+									<div class="review-fieldset">
+										<div class="review-fieldset__line">
+											<lable class="review-fieldset__line_label">
+												* Название поле
+											</lable>
+											<input type="text" class="review-fieldset__line_input review-fieldset__line_input_-name">
+										</div>
+										<!-- review-fieldset__line -->
+										<div class="review-fieldset__line">
+											<lable class="review-fieldset__line_label">
+												* Название поле
+											</lable>
+											<input type="email" class="review-fieldset__line_input review-fieldset__line_input_-email">
+										</div>
+										<!-- review-fieldset__line -->
+										<div class="review-fieldset__line">
+											<lable class="review-fieldset__line_label">
+												* Название поле
+											</lable>
+											<textarea name="review-message" id="" class="review-fieldset__line_input review-fieldset__line_input_-textarea"></textarea>
+											<!-- review-fieldset__line_input_-textarea -->
+										</div>
+										<!-- review-fieldset__line -->
+									</div>
+									<!-- review-fieldset -->
+								</form>
+								<!-- reviews-form -->
+							</div>
+							<!-- reviews-form -->
 							
 						</div>
 					</article>
