@@ -14,7 +14,6 @@ button:focus {
 }
 
 body {
-    
     color: #2e3a47;
     font-size: 14px;
     line-height: 18px;
@@ -41,6 +40,8 @@ label{
     max-width: 1190px;
     padding: 0 10px;
     margin: 0 auto;
+    background: none;
+    box-shadow: none;
 }
 
 .main-header-wrapper {
