@@ -186,13 +186,14 @@ title: Карточка товара
 								</span>
 								<!-- reviews-count -->
 								<ul class="reviews__list">
-									<li class="reviews__list_item">
+								{% for i in (1..4) %}
+								<li class="reviews__list_item">
 										<div class="reviews__list_item_author">
-											Написал:  sarhov
+										<span class="reviews__list_item_author_text">	Написал: </span> sarhov
 										</div>
 										<!-- reviews__list_item_author -->
 										<div class="reviews__list_item_stars">
-											<img src="{{site.baseurl}}/review-star.jpg" alt="">
+											<img src="{{site.baseurl}}/img/review-star.jpg" alt="">
 										</div>
 										<!-- reviews__list_item_stars -->
 										<div class="reviews__list_item_content">
@@ -200,11 +201,13 @@ title: Карточка товара
 										</div>
 										<!-- reviews__list_item_content -->
 										<div class="reviews__list_item_date">
-											
+											28.07.2014
 										</div>
 										<!-- reviews__list_item_date -->
 									</li>
 									<!-- reviews__list_item -->
+									
+								{% endfor %}
 								</ul>
 								<!-- reviews__list -->
 							</div>
