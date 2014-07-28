@@ -470,7 +470,7 @@ label {
         &_item {
             display: block;
             width: 100%;
-            padding: 15px 20px;
+            padding: 17px 20px 16px 20px;
             border: none;
             border-bottom: 1px solid #e4e5e7;
             border-right: 1px solid #e4e5e7;
@@ -480,6 +480,7 @@ label {
             text-transform: uppercase;
             font-size: 14px;
             text-align: left;
+            background: none;
             color: #2e3a47;
             &:before {
                 width: 2px;
@@ -508,7 +509,7 @@ label {
         width: 68%;
         padding: 10px 10px 30px 10px;
         &_item {
-            display: none;
+            // display: none;
             &_headline {
                 border-bottom: 1px solid #e4e5e7;
                 color: #2e3a47;
