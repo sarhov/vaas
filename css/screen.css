@@ -726,7 +726,6 @@ label {
 /* line 566, ../sass/_common.scss */
 .reviews__list_item:last-child {
   border-bottom: none;
-  background: none;
 }
 
 /* line 576, ../sass/_common.scss */
