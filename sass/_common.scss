@@ -245,6 +245,11 @@ label {
     margin-bottom: 20px;
 }
 
+.breadcrumbs{
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
 // END breadcrumbs
 
 // product
@@ -624,11 +629,17 @@ label {
                 vertical-align: top;
                 text-align: left;
                 line-height: 1.5;
-                height: 200px;
+                height: 100px;
                 resize:none;
             }
         }
 
+    }
+    &__submit{
+        text-align: right;
+        &_button{
+            @include hovbutton;
+        }
     }
 }
 
