@@ -1002,7 +1002,7 @@ label {
 /* line 788, ../sass/_common.scss */
 .carousel-content__item_quick-view {
   position: absolute;
-  top: 50%;
+  top: 40%;
   margin-top: -50px;
   left: 50%;
   margin-left: -31px;

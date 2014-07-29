@@ -24,8 +24,6 @@ $(document).ready(function() {
 	});
 /* END product tabs */
 
-
-
 /* carousel tabs */
 	$('.jsCarouselTabSwitcher').first().addClass('isActive').siblings('dt').removeClass('isActive');
 	$('.jsCarouselTabContent').first().fadeIn().siblings('dd').hide();
