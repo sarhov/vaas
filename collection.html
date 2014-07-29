@@ -7,6 +7,7 @@ title: Категория
 	<div class="container clearfix">
 
 		<aside class="sidebar">
+
 			<section class="sidebar__box">
 				<h1 class="sidebar__box_headline">
 					Специальное
@@ -30,9 +31,14 @@ title: Категория
 										<img src="{{site.baseurl}}/img/stars.png" alt="">
 									</div>
 								<div class="product-block__item_prices">
-								<span class="product-block__item_prices_item product-block__item_prices_item_-old-price gl-old-price">43359 Руб</span>
-								<span class="product-block__item_prices_item product-block__item_prices_item_-new-price gl-new-price"> 6500 Руб</span>
+									<span class="product-block__item_prices_item product-block__item_prices_item_-old-price gl-old-price">
+									43359 Руб
+									</span>
+									<span class="product-block__item_prices_item product-block__item_prices_item_-new-price gl-new-price"> 
+									6500 Руб
+									</span>
 								</div>
+								<!-- product-block__item_prices -->
 							</div>
 							<!-- product-block__item_info-block -->
 						</article>
@@ -40,6 +46,45 @@ title: Категория
 						{% endfor %}
 					</section>
 					<!-- product-block_-sidebar -->
+				</div>
+				<!-- sidebar__box_content -->
+			</section>
+			<!-- sidebar__box -->
+
+
+			<section class="sidebar__box">
+				<h1 class="sidebar__box_headline">
+					Параметры
+				</h1>
+				<!-- sidebar__box_headline -->
+				<div class="sidebar__box_content">
+					<div class="filtr-block">
+						<form action="#" class="filtr-block-form">
+							{% for property in (1..4) %}
+							<div class="filtr-block__line">
+								<h2 class="filtr-block__line_headline">
+									Название параметра
+								</h2>
+								<!-- filtr-block__line_headline -->
+								<div class="filtr-block__line_content">
+									{% for i in (1..8) %}
+									<a href="#" class="filtr-block__line_content_item {% if forloop.index == 3 %} active {% endif %}">
+									<i class="fa fa-angle-double-right"></i>
+										параметр{{i}}  ({{ i | plus:4}})
+									</a>
+									{% endfor %}
+								</div>
+								<!-- filtr-block__line_content -->
+							</div>
+							<!-- fitlr-block__line -->
+							{% endfor %}
+							<button class="filtr-block__reset">
+								Сбросить
+							</button>
+						</form>
+						<!-- filtr-block-form -->
+					</div>
+					<!-- fitlr-block -->
 				</div>
 				<!-- sidebar__box_content -->
 			</section>
@@ -58,11 +103,11 @@ title: Категория
 					</div>
 				</div>
 				<!-- main-content__heade_box -->
-				<div class="main-content__header_box">
-					<h2 class="main-content__header_box_headline">
+				<div class="main-content__header_box main-content__header_box_-how-choose">
+					<h2 class="main-content__header_box_headline ">
 						Как выбрать
 					</h2>
-					<div class="main-content__header_box_content">
+					<div class="main-content__header_box_content editor">
 						<p>
 							Далеко-далеко за словесными горами в стране, гласных.
 						</p>
@@ -79,16 +124,31 @@ title: Категория
 			</header>
 			<!-- main-content__header -->
 			<div class="main-content__actions main-content__actions_-top">
+
 				<div class="view-action">
-					<button class="view-action__item view-action__item_-grid jsGrid">
+					<button class="view-action__item view-action__item_-grid jsGrid" title="Таблица">
 						<i class="fa fa-th-large"></i>
 					</button>
 					<!-- view-action__item_-grid -->
-					<button class="view-action__item view-action__item_-list jsList">
+					<button class="view-action__item view-action__item_-list jsList" title="Список">
 						<i class="fa fa-th-list"></i>
 					</button>
 					<!-- view-action__item_-list -->
 				</div>
+
+				<div class="sorting-action">
+					<label for="" class="sorting-action__label">Сортировать</label>
+					<!-- sorting-action__label -->
+					<select name="" id="" class="sorting-action__select">
+						<option value="">По цене</option>
+						<option value="">По цене</option>
+						<option value="">По цене</option>
+						<option value="">По цене</option>
+					</select>
+					<!-- sorting-action__select -->
+				</div>
+				<!-- sorting-action -->
+
 			</div>
 			<!-- main-content__actions_-top -->
 		</main>

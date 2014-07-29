@@ -545,12 +545,80 @@ label {
     }
 }
 
-.main-content{
-    float: left;
-    width: 65%;
+.filtr-block{
+    padding: 10px 0 10px 20px;
+    &__line{
+        margin-bottom: 5px;
+        &_headline{
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 15px;
+        }
+        &_content{
+            padding-left: 20px;
+            &_item{
+                margin-bottom: 15px;
+                display: block;
+                color: #2e3a47;
+                font-size: 14px;
+                vertical-align: middle;
+                position: relative;
+                &.active{
+                    color: #000;
+                    &:before{
+                        content: 'x';
+                        position: absolute;
+                        right: 7px;
+                        top: -2px;
+                        font-size: 12px;
+                        &:hover{
+                            color: #9c3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__reset{
+        @include hovbutton;
+        display: block;
+        clear: both;
+        margin-left: 10px;
+        margin-top: 25px;
+    }
 }
 
-// End sidebar
+.main-content{
+    float: left;
+    width: 75%;
+    &__header{
+        margin-bottom: 20px;
+        @include pie-clearfix;
+        &_box{
+            float: left;
+            &:first-child{
+                width: 60%;
+            }
+
+            &_-how-choose{
+                width: 30%;
+                float: right;
+            }
+            &_headline{
+                font-size: 24px;
+                text-transform: uppercase;
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    &__actions{
+        @include pie-clearfix;
+    }
+}
+
+// End sidebar and main
 
 
 
