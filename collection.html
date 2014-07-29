@@ -3,17 +3,43 @@ layout: default
 title: Категория
 ---
 
-<div class="collection wrap">
-	<div class="container">
+<div class="collection-wrap">
+	<div class="container clearfix">
 
 		<aside class="sidebar">
 			<section class="sidebar__box">
 				<h1 class="sidebar__box_headline">
-					
+					Специальное
 				</h1>
-				<!-- sidebar__box_header -->
+				<!-- sidebar__box_headline -->
 				<div class="sidebar__box_content">
-					
+					<section class="product-block product-block_-sidebar">
+						{% for i in (1..4) %}
+						<article class="product-block__item">
+							<a href="{{site.baseurl}}/product/" class="product-block__item_img-link">
+								<img src="{{site.baseurl}}/img/product-block-img_{{i}}.jpg" alt="" class="product-block__item_img-link_img">
+							</a>
+							<div class="product-block__item_info-block">
+								<h1 class="product-block__item_headline">
+									<a href="" class="product-block__item_headline_link">
+										Название товара
+									</a>
+							
+								</h1>	
+									<div class="product-block__item_rating">
+										<img src="{{site.baseurl}}/img/stars.png" alt="">
+									</div>
+								<div class="product-block__item_prices">
+								<span class="product-block__item_prices_item product-block__item_prices_item_-old-price gl-old-price">43359 Руб</span>
+								<span class="product-block__item_prices_item product-block__item_prices_item_-new-price gl-new-price"> 6500 Руб</span>
+								</div>
+							</div>
+							<!-- product-block__item_info-block -->
+						</article>
+						<!-- product-block__item -->
+						{% endfor %}
+					</section>
+					<!-- product-block_-sidebar -->
 				</div>
 				<!-- sidebar__box_content -->
 			</section>
