@@ -3,11 +3,11 @@
     <div class="carousels">
       <dl class="carousels__box clearfix">
         {% for i in (1..5) %}
-        <dt class="carousels__box_title {% if forloop.index == 1 %} isActive {% endif %}">
+        <dt class="carousels__box_title jsCarouselTabSwitcher" data-href="carousel_tab_{{i}}">
           <button class="carousels__box_title_action">Таб {{i}}</button>
         </dt>
         <!-- carusels__box_title -->
-        <dd class="carousels__box_item ">
+        <dd class="carousels__box_item jsCarouselTabContent" data-name="carousel_tab_{{i}}">
          <section class="carousel-content">
            {% for i in (1..4) %}
            <article class="carousel-content__item">
