@@ -1,6 +1,6 @@
 <section class="carousels-wrap {{include.type}}">
   <div class="container">
-    <div class="carousels">
+    <div class="carousels" id="carousel_{{include.id}}">
       <dl class="carousels__box clearfix">
         {% for i in (1..5) %}
         <dt class="carousels__box_title jsCarouselTabSwitcher" data-href="carousel_tab_{{i}}">
@@ -10,39 +10,14 @@
         <dd class="carousels__box_item jsCarouselTabContent" data-name="carousel_tab_{{i}}">
          <section class="carousel-content">
            {% for i in (1..4) %}
-           <article class="carousel-content__item">
-            <a href="{{site.baseurl}}/product" class="carousel-content__item_img-link jsHasImages">
-              <img src="{{site.baseurl}}/img/product-img-{{i}}.jpg" alt="{{Название товара}}" class="carousel-content__item_img-link-img carousel-content__item_img-link-img_first">
-              <img src="{{site.baseurl}}/img/product-img-{{i}}-2.jpg" alt="{{Название товара}}" class="carousel-content__item_img-link-img carousel-content__item_img-link-img_second">
-            </a>
-            <!-- carousel-content__item_img-link -->
-            <h1 class="carousel-content__item_title">
-              <a href="{{site.baseurl}}/product" class="carousel-content__item_title_link">
-                Название товара
-              </a>
-            </h1>
-            <!-- carousel-content__item_title -->
-            <div class="carousel-content__item_prices">
-             <del class="carousel-content__item_prices_old-price">5780</del>
-             <span class="carousel-content__item_prices_new-price">4560 Руб</span>
-           </div>
-           <!-- carousel-content__item_prices -->
-           <div class="carousel-content__item_buyzone">
-             <button class="carousel-content__item_buyzone_buy carousel-content__item_buyzone_action jsAddToCaart">Добавить в корзину</button>
-             <button class="carousel-content__item_buyzone_compare carousel-content__item_buyzone_action jsAddToCompare">
-               <i class="fa fa-copy"></i>
-             </button>
-           </div>
-           <!-- carousel-content__item_buyzone -->
+          
+            <article class="carousel-content__item"> 
+                {% include product-block.html type="carousel" %}
+            </article>
+             <!-- carousel-content__item -->
 
-           <div class="carousel-content__item_quick-view">
-             <button class="carousel-content__item_quick-view_product carousel-content__item_quick-view_action"><i class="fa fa-eye"></i></button>
-             <button class="carousel-content__item_quick-view_images carousel-content__item_quick-view_action"><i class="fa fa-search-plus"></i></button>
-           </div>
-           <!-- carousel-content__item_quick-view -->
            {% include quick-view.html %}
-         </article>
-         <!-- carousel-content__item -->
+      
          {% endfor %}
        </section>
        <!-- carousel-content -->

@@ -1,0 +1,47 @@
+
+   <div class="carousel-content__item_img-wrap">
+    <a href="{{site.baseurl}}/product" class="carousel-content__item_img-link jsHasImages">
+      <img src="{{site.baseurl}}/img/product-img-{{i}}.jpg" alt="{{Название товара}}" class="carousel-content__item_img-link-img carousel-content__item_img-link-img_first">
+      <img src="{{site.baseurl}}/img/product-img-{{i}}-2.jpg" alt="{{Название товара}}" class="carousel-content__item_img-link-img carousel-content__item_img-link-img_second">
+    </a>
+     <!-- carousel-content__item_img-link -->
+
+   <div class="carousel-content__item_quick-view">
+     <button class="carousel-content__item_quick-view_product carousel-content__item_quick-view_action"><i class="fa fa-eye"></i></button>
+     <button class="carousel-content__item_quick-view_images carousel-content__item_quick-view_action"><i class="fa fa-search-plus"></i></button>
+   </div>
+   <!-- carousel-content__item_quick-view -->
+   </div>
+
+  <h1 class="carousel-content__item_title">
+    <a href="{{site.baseurl}}/product" class="carousel-content__item_title_link">
+      Название товара
+    </a>
+  </h1>
+  <!-- carousel-content__item_title -->
+
+  {% if include.type == collection %}
+        <div class="product-block-rating">
+      <img src="{{site.baseurl}}/img/stars.png" alt="">
+      <span class="product-block-rating__actions">
+      <a href="#" class="product-block-rating__count">Отзывов (12) </a> | <a href="#" class="product-block-rating__add">Оставить отзыв</a></span>
+    </div>
+    <div class="product-block-description editor">
+      Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Путь, города семантика прямо, залетают рукопись lorem.
+    </div>
+  {% endif %}
+
+
+  <div class="carousel-content__item_prices">
+   <del class="carousel-content__item_prices_old-price">5780</del>
+   <span class="carousel-content__item_prices_new-price">4560 Руб</span>
+  </div>
+  <!-- carousel-content__item_prices -->
+  <div class="carousel-content__item_buyzone">
+   <button class="carousel-content__item_buyzone_buy carousel-content__item_buyzone_action jsAddToCaart">Добавить в корзину</button>
+   <button class="carousel-content__item_buyzone_compare carousel-content__item_buyzone_action jsAddToCompare">
+     <i class="fa fa-copy"></i>
+   </button>
+  </div>
+  <!-- carousel-content__item_buyzone -->
+

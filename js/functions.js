@@ -24,24 +24,54 @@ $(document).ready(function() {
 	});
 /* END product tabs */
 
-/* carousel tabs */
-	$('.jsCarouselTabSwitcher').first().addClass('isActive').siblings('dt').removeClass('isActive');
-	$('.jsCarouselTabContent').first().fadeIn().siblings('dd').hide();
-	$('.jsCarouselTabSwitcher').click(function(e) {
-		e.preventDefault();
-		if ($(this).hasClass('isActive')) {
-			return;
-		}
 
-		else{
-			var needTab = $(this).data('href');
-			$(this).addClass('isActive').siblings('dt').removeClass('isActive');
-			$('.jsCarouselTabContent[data-name="'+ needTab +'"]').fadeIn().siblings('dd').hide();
-		}
-	});
+/* carousel tabs */
+	carousel('carousel_123');
+	carousel('carousel_321');
+	carousel('carousel_231');
+	function carousel (thecarousel){
+		var mycarousel = $('#' + thecarousel);
+		mycarousel.find('.jsCarouselTabSwitcher').first().addClass('isActive').siblings('dt').removeClass('isActive');
+		mycarousel.find('.jsCarouselTabContent').first().fadeIn().siblings('dd').hide();
+		mycarousel.find('.jsCarouselTabSwitcher').click(function(e) {
+			e.preventDefault();
+			if ($(this).hasClass('isActive')) {
+				return;
+			}
+
+			else{
+				var needTab = $(this).data('href');
+				$(this).addClass('isActive').siblings('dt').removeClass('isActive');
+				mycarousel.find('.jsCarouselTabContent[data-name="'+ needTab +'"]').fadeIn().siblings('dd').hide();
+			}
+		});
+	}
 /*  END carousel tabs */
 
+/* Grid - List */
 
+
+	$('.jsList').click(function() {
+	    $('.products').addClass('products_-list').removeClass('grid')
+	    $.totalStorage('layout', 'list');
+	    $(this).addClass('active').siblings('button').removeClass('active')
+	});
+
+	$('.jsGrid').click(function() {
+	    $('.products').addClass('grid').removeClass('products_-list')
+	    $.totalStorage('layout', 'grid');
+	    $(this).addClass('active').siblings('button').removeClass('active')
+	});
+
+	if ($.totalStorage('layout') == 'list') {
+	    $('.products').addClass('products_-list');
+	    $('.jsList').addClass('active').siblings('button').removeClass('active')
+	} else {
+	    $('.products').removeClass('products_-list');
+	    $('.jsGrid').addClass('active').siblings('button').removeClass('active')
+	}
+
+/* END Grid  - List */
 
 
 
