@@ -3,7 +3,7 @@ title: site title
 email: your-email@domain.com
 description: "site description"
 encoding: utf-8
-baseurl: "/VS"
+baseurl: "/vaas"
 url: "/"
 
 # Build settings

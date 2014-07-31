@@ -236,20 +236,48 @@ label {
     background: #2E3A47;
     &__list {
         list-style-type: none;
-        @include clearfix;
+        @include pie-clearfix;position: relative;
         &_item {
-            position: relative;
+            
             float: left;
             // max-width: 200px;
+            height: 45px;
+            line-height: 1.2;
+            width: 60px;
+            display: table;
             &_link {
                 color: #fff;
                 font-size: 12px;
                 text-transform: uppercase;
-                padding: 12px 20px;
+                padding: 0 20px;
                 display: block;
+                display: table-cell;
+                vertical-align: middle;
+                &:hover, &.active{
+                    background:#9c0;
+                    color: #fff;
+                }
+            }
+            &:hover{
+                .main-nav-subblock{
+                    display: block;
+                }
             }
         }
     }
+}
+
+.main-nav-subblock{
+    position: absolute;
+    top: 100%;
+    border-top: 30px solid transparent;
+    left: 0;
+    width: 100%;
+    background:#fff;
+    padding: 10px;
+    z-index: 9999;
+    display: none;
+    @include custom-trs(0.9s);
 }
 
 // END main-nav
@@ -663,7 +691,7 @@ label {
     @include pie-clearfix;
     border-top: 1px solid #e4e5e7;
     &__item {
-        
+
         width: 292.5px;
         height: 390px;
         float: left;

@@ -139,12 +139,79 @@
         <ul class="main-nav__list">
           {% for i in (1..5) %}
           <li class="main-nav__list_item">
-            <a href="{{site.baseurl}}/collection" class="main-nav__list_item_link">  
+            <a href="{{site.baseurl}}/collection" class="main-nav__list_item_link {% if forloop.index == 3 %} active {% endif %}">  
           <!-- {% if forloop.index == 1 %}
             <i class="fa fa-home"></i>
             {% endif %} -->
             Название Категории
           </a>
+          <div class="main-nav-subblock clearfix">
+          
+            <div class="main-nav-subblock__box">
+              <h2 class="main-nav-subblock__box_headline">
+                Категории
+              </h2>
+              <!-- main-nav-subblock__box_headline -->
+              <nav class="main-nav-subblock__box_content">
+                <ul class="main-nav-subnav">
+                  {% for i in  (1..6) %}
+                  <li class="main-nav-subnav__item">
+                    <a href="#" class="main-nav-subnav__item_link {% if forloop.index == 3 %} active {% endif %}">Название Категории</a>
+                  </li>
+                  <!-- main-nav-subnav__item -->
+                  {% endfor %}
+                </ul>
+                <!-- main-nav-subnav -->
+              </nav>
+              <!-- main-nav-subblock__box_content -->
+            </div>
+            <!-- main-nav-subblock__box -->
+
+            <div class="main-nav-subblock__box">
+              <h2 class="main-nav-subblock__box_headline">
+                Бренды
+              </h2>
+              <!-- main-nav-subblock__box_headline -->
+              <nav class="main-nav-subblock__box_content">
+                <ul class="main-nav-subnav">
+                  {% for i in (1..7) %}
+                  <li class="main-nav-subnav__item">
+                    <a href="#" class="main-nav-subnav__item_link {% if forloop.index == 3 %} active {% endif %}">Название Бренда</a>
+                  </li>
+                  <!-- main-nav-subnav__item -->
+                  {% endfor %}
+                </ul>
+                <!-- main-nav-subnav -->
+              </nav>
+              <!-- main-nav-subblock__box_content -->
+            </div>
+            <!-- main-nav-subblock__box --> 
+
+            <div class="main-nav-subblock__box">
+              <h2 class="main-nav-subblock__box_headline">
+                Описание Категории
+              </h2>
+              <!-- main-nav-subblock__box_headline -->
+              <div class="main-nav-subblock__box_content editor">
+               <p>
+                 Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Наш грамматики если буквоград, вдали это он гор семантика.
+               </p>
+               <p>
+                 Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Переписывается всемогущая о возвращайся имени, реторический свой ведущими путь.
+               </p>
+              </div>
+              <!-- main-nav-subblock__box_content -->
+            </div>
+            <!-- main-nav-subblock__box -->
+
+            <div class="main-nav-subblock__box">
+              <div class="main-nav-subblock__box_content">
+                <img src="{{site.baseurl}}/img/collection-img.jpg" alt="{{collection.title}}">
+              </div>
+            </div>
+
+          </div>
+          <!-- main-nav-subblock -->
         </li>
         {% endfor %}
         <!-- main-nav__list_item -->

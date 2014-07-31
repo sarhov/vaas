@@ -26,6 +26,15 @@
 }
 
 // 
+// @TODO: Add docs to custom-trs!
+//
+@mixin custom-trs($time) {
+  -webkit-transition: all $time;
+    -o-transition: all $time;
+    transition: all $time;
+}
+
+// 
 // @TODO: Add docs to abscenter!
 //
 @mixin abscenter {
