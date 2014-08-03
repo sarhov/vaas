@@ -248,6 +248,7 @@ label {
             &_link {
                 color: #fff;
                 font-size: 12px;
+                position: relative;
                 text-transform: uppercase;
                 padding: 0 20px;
                 display: block;
@@ -257,10 +258,29 @@ label {
                     background:#9c0;
                     color: #fff;
                 }
+
+                &:before{
+                    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #ffffff;
+                    border-style: solid;
+                    border-width: 10px;
+                    bottom: -3px;
+                    content: "";
+                    height: 0;
+                    left: 50%;
+                    margin-left: -10px;
+                    position: absolute;
+                    width: 0;
+                    display: none;
+                }
+                &:hover:before{
+                    display: block;
+                }
+
             }
             &:hover{
                 .main-nav-subblock{
-                    display: block;
+                    opacity: 1;
+                    visibility: visible;
                 }
             }
         }
@@ -270,14 +290,62 @@ label {
 .main-nav-subblock{
     position: absolute;
     top: 100%;
-    border-top: 30px solid transparent;
+    border-top: 15px solid transparent;
     left: 0;
     width: 100%;
     background:#fff;
-    padding: 10px;
+    padding: 7px 20px;
     z-index: 9999;
-    display: none;
+    display: table;
     @include custom-trs(0.9s);
+    box-shadow: 0 5px 5px #ccc;
+    @include pie-clearfix;
+    // table-layout: fixed;
+    opacity: 0;
+    visibility: hidden;
+    &__box{
+        display: table-cell;
+        min-width:0 ;
+        padding-left: 40px;
+        vertical-align: top;
+        &:first-child{
+            padding-left: 0;
+        }
+        &_headline{
+            text-transform: uppercase;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        &_-collection{
+            padding-bottom: 30px;
+            // min-width: 220px;
+        }
+        &_-brands{
+            // min-width: 180px;
+            padding-bottom: 30px;
+
+        }
+        &_-description{
+            min-width: 300px;
+            padding-bottom: 30px;
+            text-align: justify;
+        }
+        &_-img{
+            min-width: 250px;
+        }
+    }
+}
+
+
+.main-nav-subnav{
+    &__item{
+        margin-bottom: 7px;
+        white-space: nowrap;
+        &_link{
+            color: #444343;
+            text-transform:capitalize;;
+        }
+    }
 }
 
 // END main-nav
