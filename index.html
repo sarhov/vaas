@@ -5,11 +5,33 @@ title: Главная
 
 <section class="slider-wrap">
   <div class="container">
-    <div class="slider">
-      <img src="{{site.baseurl}}/img/robot.jpg" alt="" class="slider__img-tmp">
-      <div class="temp-text">
-        Здесь будет слайдер
+    <div id="carousel-wrap">
+      <div id="carousel">
+
+        {% for i in (1..5) %}
+        <div class="slide" style="url()">
+          <article class="slider__item">
+          <h1 class="slider__title">
+            Будущее гораздо ближе чем мы думаем
+          </h1>
+          <h2>
+            Добро пожаловать
+          </h2>
+          <h3>
+            В первый гипермаркет роботов
+          </h3>
+             <img src="{{site.baseurl}}/img/img_slide_1.png" alt="" />
+          </article>
+         
+        </div>
+
+        {% endfor %}
+
       </div>
+      <!-- carousel -->
+      <a href="#" class="carousel-nav prev" title="Show previous"><i class="fa fa-chevron-left"></i> </a>
+      <a href="#" class="carousel-nav next" title="Show next"> <i class="fa fa-chevron-right"></i> </a>
+      <div class="carousel-pagination"></div>
     </div>
   </div>
   <!-- container -->
@@ -90,9 +112,9 @@ title: Главная
       {% endfor %}
     </div>
     <!-- banners=two-inner -->
-    </div>
-    <!-- banners-two -->
   </div>
-  <!-- container -->
+  <!-- banners-two -->
+</div>
+<!-- container -->
 </section>
 <!-- banners-two-wrap -->

@@ -297,7 +297,7 @@ label {
     padding: 7px 20px;
     z-index: 9999;
     display: table;
-    @include custom-trs(0.9s);
+    @include custom-trs(0.3s);
     box-shadow: 0 5px 5px #ccc;
     @include pie-clearfix;
     // table-layout: fixed;
@@ -1028,6 +1028,81 @@ label {
         text-shadow: 0 0 4px #444;
         padding-top: 50px;
     }
+}
+
+.slider__item{
+    width: 100%;
+    background: #2C566C;
+    margin: auto;
+    height: 100%;
+    position: relative;
+}
+
+.slide{
+    h1, h2, h3{
+        position: absolute;
+    }
+
+    h1{
+        color: #fff;
+        font-size: 30px;
+        max-width: 400px;
+        top: 16%;
+        left: 10%;
+        text-align: left;
+        line-height: 1.2;
+        @include transition(all, .9s);
+          @include transition-delay(0.7s);
+        left: 40%;
+        opacity: 0;
+        visibility: hidden;
+    }
+    &.active h1{
+        left: 10%;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    h2{
+        color: #F2BE03;
+        font-size: 20px;
+        top: 48%;
+        left: 10%;
+         @include transition(all, .9s);
+          @include transition-delay(1.2s);
+        left: -30%;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+        &.active h2{
+        left: 10%;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    h3{
+        color: #fff;
+        font-size: 16px;
+        left: 10%;
+        top: 58%;
+          @include transition(all, 1.2s);
+          @include transition-delay(1.8s);
+        top: 70%;
+        opacity: 0;
+        visibility: hidden;
+     
+    }
+
+           &.active h3{
+        top: 58%;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.slider-wrap{
+    margin-bottom: 30px;
 }
 
 // END slider

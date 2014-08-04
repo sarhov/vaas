@@ -1,0 +1,104 @@
+$slideshow-height: 355px;
+
+#carousel-wrap {
+	height: $slideshow-height;
+	background: #1B3742;
+  overflow: hidden;
+  position: relative;
+}
+.slide {
+	float: left;
+	height: $slideshow-height;
+
+  position: relative;
+  overflow: hidden;
+}
+.slide.active{
+  opacity: 1;
+}
+.slide img {
+  display: block;
+float: right;
+position: absolute;
+margin: 0;
+right: 0;
+top: 0;
+max-width: 60%;
+max-height: 100%;
+height: auto;
+}#carousel-wrap i.fa {
+  font-size: 30px;
+  left: 0;
+  margin-top: -16px;
+  position: absolute;
+  top: 50%;
+  color: #444;
+  text-align: center;
+}
+
+.carousel-nav {
+  background-color: rgba(#fff, 0.1);
+  display: block;
+  height: 100%;
+  width: 50px;
+  top: 0;
+  position: absolute;
+  @include opacity(.1);
+  @include transition( all 0.2s ease-in-out );
+  text-align: center;
+  &:hover{
+    @include opacity(1);
+  }
+  
+  
+  
+}
+.carousel-nav.prev {
+  i.fa{
+    left: 13px !important;
+    right: auto;
+  }
+}
+.carousel-nav.next {
+  right: 0;
+  left: auto;
+  i.fa{
+    left: auto;
+    right: 7px;
+  }
+  
+}
+
+
+
+
+
+.carousel-pagination {
+  // margin-left: 380px;
+  position: absolute;
+
+  left: 70px;
+
+  bottom: 10px;
+  a {
+    // border-radius: 10px;
+   background-color: rgba(255, 255, 255, 0.5);
+border: 1px solid #8a8c83;
+box-shadow: 0 0 0 rgba(0, 0, 0, 0.5), 0 2px 1px rgba(58, 52, 52, 0.19) inset;
+box-sizing: border-box;
+display: inline-block;
+height: 15px;
+margin: 0 5px 0 0;
+width: 15px;
+    &:hover {
+      background-color: rgba(#fff, 0.8);
+    }
+    span {
+      display: none;
+    }
+  }
+}
+
+.carousel-pagination a.selected {
+  background-color: #2E3A47;
+}
