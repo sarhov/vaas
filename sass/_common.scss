@@ -16,7 +16,7 @@ button:focus {
 body {
     color: #2e3a47;
     font-size: 14px;
-    line-height: 18px;
+    line-height: normal;
     text-align: left;
     font-family: "Open Sans",sans-serif;
 }
@@ -376,7 +376,7 @@ label {
     &__image {
         float: left;
         width: 45%;
-        padding-right: 10px;
+        padding-right: 20px;
         &_big {
             margin-bottom: 10px;
             &_img {
@@ -385,16 +385,52 @@ label {
         }
         &_others {
             width: 100%;
-            overflow: hidden;
-        }
-        &_item {
+            overflow: hidden; 
+            padding: 0 20px;
+            position: relative;
+            margin-left: -5px;
+            height: 80px;
+
+            &_item {
             float: left;
             width: 100px;
-            height: 100px;
+            height: 80px;
             position: relative;
+            border: 1px solid $bc;
+            @include trs;
+            margin: 0 5px;
+            &:hover{
+                border-color: #444;
+            }
             &_img {
                 @include abscenter;
+                max-width: 100%;
+                height: auto;
+                max-height: 100%;
             }
+        }
+
+        &_action{
+            position: absolute;
+            top: 50%;
+            height: 30px;
+            width: 18px;
+            border: 1px solid $bc;
+            text-align: center;
+            line-height: 27px;
+            margin-top: -12px;
+            display: block;
+            &:hover{
+                border-color:#444;
+            }
+            &_-prev{
+                left: 0px;
+            }
+            &_-next{
+                right: 0px;
+            }
+        }
+       
         }
     }
     &__info {
@@ -1057,6 +1093,10 @@ label {
         opacity: 0;
         visibility: hidden;
     }
+ 
+
+
+
     &.active h1{
         left: 10%;
         opacity: 1;

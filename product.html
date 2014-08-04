@@ -7,16 +7,26 @@ title: Карточка товара
 	<div class="container">
 		<article class="product" id="product_1234">
 			<div class="product__image">
-				<div class="product__image_big">
-					<img src="{{site.baseurl}}/img/product-big-img.jpg" alt="product.name" class="product__image_big_img">
-				</div>
+				<a href="{{site.baseurl}}/img/image1.jpg" class="product__image_big ">
+					<img src="{{site.baseurl}}/img/image_medium1.jpg"id="zoom1" alt="product.name" class="product__image_big_img cloudzoom" data-cloudzoom='  zoomSizeMode: "image",                      tintColor:"#000",                      tintOpacity:0.25,                      captionPosition:"bottom",                      maxMagnification:4,                      autoInside:750  ' title="pic name">
+				</a>
 				<!-- product__image_big -->
 				<div class="product__image_others">
-					{% for i in (1..6) %}
-						<a href="product-big-img" class="product__image_others_item">
-							<img src="{{site.baseurl}}/img/product-thumb-{{i}}.jpg" alt="product-name" class="product__image_others_item_img">
-						</a>
-					{% endfor %}
+
+					<div id="thumb_carousel">
+						{% for i in (1..5) %}
+							<a href="{{site.baseurl}}/img/image{{i}}.jpg" class="product__image_others_item">
+								<img src="{{site.baseurl}}/img/image_small{{i}}.jpg" alt="product-name" class="product__image_others_item_img cloudzoom-gallery" data-cloudzoom = "useZoom: '.cloudzoom', image: '{{site.baseurl}}/img/image_medium{{i}}.jpg' ">
+							</a>
+						{% endfor %}
+					</div>
+					<!-- #thumb_carousel -->
+					<a href="" class="product__image_others_action product__image_others_action_-prev" id="thumb_prev">
+						<
+					</a>
+					<a href="" class="product__image_others_action product__image_others_action_-next" id="thumb_next">
+						>
+					</a>
 				</div>
 				<!-- product__image_others -->
 			</div>
