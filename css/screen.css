@@ -1581,23 +1581,26 @@ label {
   overflow: hidden;
   *zoom: 1;
   height: 100%;
-  margin: 0 -10px;
 }
 /* line 1255, ../sass/_common.scss */
+.carousel-content > div {
+  height: 350px;
+}
+/* line 1258, ../sass/_common.scss */
 .carousel-content__item {
   position: relative;
   float: left;
-  width: 25%;
+  width: 292px;
   padding: 0 10px;
-  height: 100%;
+  height: 350px;
   border-left: 1px solid #ccc;
 }
-/* line 1262, ../sass/_common.scss */
+/* line 1265, ../sass/_common.scss */
 .carousel-content__item_img-wrap {
   position: relative;
   width: 100%;
 }
-/* line 1266, ../sass/_common.scss */
+/* line 1269, ../sass/_common.scss */
 .carousel-content__item_quick-view {
   position: absolute;
   top: 60%;
@@ -1607,7 +1610,7 @@ label {
   width: 65px;
   height: 30px;
 }
-/* line 1274, ../sass/_common.scss */
+/* line 1277, ../sass/_common.scss */
 .carousel-content__item_quick-view_action {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -1635,28 +1638,28 @@ label {
   background-color: #7bbd42;
   border-color: #6fab3b;
 }
-/* line 1284, ../sass/_common.scss */
+/* line 1287, ../sass/_common.scss */
 .carousel-content__item_quick-view_product {
   -webkit-transform: translate3d(-20px, 0, 0);
   -ms-transform: translate3d(-20px, 0, 0);
   -o-transform: translate3d(-20px, 0, 0);
   transform: translate3d(-20px, 0, 0);
 }
-/* line 1290, ../sass/_common.scss */
+/* line 1293, ../sass/_common.scss */
 .carousel-content__item_quick-view_images {
   -webkit-transform: translate3d(20px, 0, 0);
   -ms-transform: translate3d(20px, 0, 0);
   -o-transform: translate3d(20px, 0, 0);
   transform: translate3d(20px, 0, 0);
 }
-/* line 1297, ../sass/_common.scss */
+/* line 1300, ../sass/_common.scss */
 .carousel-content__item_img-link {
   position: relative;
   height: 200px;
   width: 100%;
   display: block;
 }
-/* line 1302, ../sass/_common.scss */
+/* line 1305, ../sass/_common.scss */
 .carousel-content__item_img-link-img {
   top: 0;
   bottom: 0;
@@ -1670,27 +1673,27 @@ label {
   opacity: 1;
   visibility: visible;
 }
-/* line 1308, ../sass/_common.scss */
+/* line 1311, ../sass/_common.scss */
 .carousel-content__item_img-link-img_second {
   visibility: hidden;
   opacity: 0;
 }
-/* line 1312, ../sass/_common.scss */
+/* line 1315, ../sass/_common.scss */
 .carousel-content__item_img-link:hover .carousel-content__item_img-link-img_first {
   opacity: 0;
   visibility: hidden;
 }
-/* line 1316, ../sass/_common.scss */
+/* line 1319, ../sass/_common.scss */
 .carousel-content__item_img-link:hover .carousel-content__item_img-link-img_second {
   opacity: 1;
   visibility: visible;
 }
-/* line 1321, ../sass/_common.scss */
+/* line 1324, ../sass/_common.scss */
 .carousel-content__item_buyzone {
   display: block;
   padding: 0 20px;
 }
-/* line 1324, ../sass/_common.scss */
+/* line 1327, ../sass/_common.scss */
 .carousel-content__item_buyzone_action {
   background: #2e3a47;
   color: #fff;
@@ -1709,7 +1712,7 @@ label {
   background-color: #7bbd42;
   border-color: #6fab3b;
 }
-/* line 1327, ../sass/_common.scss */
+/* line 1330, ../sass/_common.scss */
 .carousel-content__item_buyzone_compare {
   width: 30px;
   padding: 0;
@@ -1721,19 +1724,19 @@ label {
   -o-transform: scale(0);
   transform: scale(0);
 }
-/* line 1337, ../sass/_common.scss */
+/* line 1340, ../sass/_common.scss */
 .carousel-content__item:hover .carousel-content__item_buyzone_compare, .products__item:hover .carousel-content__item_buyzone_compare {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   -o-transform: scale(1);
   transform: scale(1);
 }
-/* line 1343, ../sass/_common.scss */
+/* line 1346, ../sass/_common.scss */
 .carousel-content__item:hover .carousel-content__item_quick-view_action, .products__item:hover .carousel-content__item_quick-view_action {
   opacity: 1;
   visibility: visible;
 }
-/* line 1347, ../sass/_common.scss */
+/* line 1350, ../sass/_common.scss */
 .carousel-content__item:hover .carousel-content__item_quick-view_product, .products__item:hover .carousel-content__item_quick-view_product {
   opacity: 1;
   visibility: visible;
@@ -1742,7 +1745,7 @@ label {
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* line 1355, ../sass/_common.scss */
+/* line 1358, ../sass/_common.scss */
 .carousel-content__item:hover .carousel-content__item_quick-view_images, .products__item:hover .carousel-content__item_quick-view_images {
   opacity: 1;
   visibility: visible;
@@ -1751,28 +1754,28 @@ label {
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* line 1363, ../sass/_common.scss */
+/* line 1366, ../sass/_common.scss */
 .carousel-content__item_title {
   margin-bottom: 10px;
   padding: 0 20px;
 }
-/* line 1366, ../sass/_common.scss */
+/* line 1369, ../sass/_common.scss */
 .carousel-content__item_title_link {
   color: #2e3a47;
   font-weight: 600;
   text-transform: capitalize;
   font-size: 14px;
 }
-/* line 1371, ../sass/_common.scss */
+/* line 1374, ../sass/_common.scss */
 .carousel-content__item_title_link:hover {
   color: #2e3a47;
 }
-/* line 1376, ../sass/_common.scss */
+/* line 1379, ../sass/_common.scss */
 .carousel-content__item_prices {
   margin-bottom: 20px;
   padding: 0 20px;
 }
-/* line 1379, ../sass/_common.scss */
+/* line 1382, ../sass/_common.scss */
 .carousel-content__item_prices_old-price {
   color: #999999;
   font-size: 16px;
@@ -1782,7 +1785,7 @@ label {
   margin-top: -2px;
   display: inline-block;
 }
-/* line 1388, ../sass/_common.scss */
+/* line 1391, ../sass/_common.scss */
 .carousel-content__item_prices_new-price {
   color: #f05423;
   font-size: 16px;
@@ -1790,17 +1793,17 @@ label {
   font-weight: 600;
 }
 
-/* line 1401, ../sass/_common.scss */
+/* line 1404, ../sass/_common.scss */
 .wide-banners-wrap {
   margin-bottom: 30px;
 }
 
-/* line 1405, ../sass/_common.scss */
+/* line 1408, ../sass/_common.scss */
 .wide-banners {
   max-width: 1190px;
   margin: 0 auto;
 }
-/* line 1407, ../sass/_common.scss */
+/* line 1410, ../sass/_common.scss */
 .wide-banners__item {
   position: relative;
   position: relative;
@@ -1823,38 +1826,38 @@ label {
 .wide-banners__item:hover:before {
   box-shadow: 0 0 0 30px rgba(0, 0, 0, 0.03) inset;
 }
-/* line 1413, ../sass/_common.scss */
+/* line 1416, ../sass/_common.scss */
 .wide-banners__item_img {
   display: block;
 }
 
-/* line 1428, ../sass/_common.scss */
+/* line 1431, ../sass/_common.scss */
 .banners-two-wrap {
   margin-bottom: 13px;
 }
 
-/* line 1432, ../sass/_common.scss */
+/* line 1435, ../sass/_common.scss */
 .banners-two {
   max-width: 1190px;
   margin: 0 auto;
 }
-/* line 1435, ../sass/_common.scss */
+/* line 1438, ../sass/_common.scss */
 .banners-two-inner {
   margin: 0 -10px;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 1439, ../sass/_common.scss */
+/* line 1442, ../sass/_common.scss */
 .banners-two__item {
   width: 25%;
   float: left;
   padding: 0 10px;
 }
-/* line 1443, ../sass/_common.scss */
+/* line 1446, ../sass/_common.scss */
 .banners-two__item_small .banners-two__item_link {
   margin-bottom: 13px;
 }
-/* line 1446, ../sass/_common.scss */
+/* line 1449, ../sass/_common.scss */
 .banners-two__item_link {
   display: block;
   position: relative;
@@ -1877,117 +1880,117 @@ label {
 .banners-two__item_link:hover:before {
   box-shadow: 0 0 0 30px rgba(0, 0, 0, 0.03) inset;
 }
-/* line 1450, ../sass/_common.scss */
+/* line 1453, ../sass/_common.scss */
 .banners-two__item_link_img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* line 1462, ../sass/_common.scss */
+/* line 1465, ../sass/_common.scss */
 .services-wrap {
   margin-bottom: 30px;
 }
 
-/* line 1466, ../sass/_common.scss */
+/* line 1469, ../sass/_common.scss */
 .services {
   overflow: hidden;
   *zoom: 1;
   background: none repeat scroll 0 0 #f5f5f5;
   border: 1px solid #e4e5e7;
 }
-/* line 1471, ../sass/_common.scss */
+/* line 1474, ../sass/_common.scss */
 .services__item {
   float: left;
   width: 25%;
   padding: 35px 10px 35px 25px;
 }
-/* line 1475, ../sass/_common.scss */
+/* line 1478, ../sass/_common.scss */
 .services__item:hover .fa, .services__item:hover .services__item_info_headline {
   color: #7bbd42;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 1479, ../sass/_common.scss */
+/* line 1482, ../sass/_common.scss */
 .services__item .fa {
   float: left;
   padding-right: 10px;
   font-size: 60px;
   color: #2e3a47;
 }
-/* line 1485, ../sass/_common.scss */
+/* line 1488, ../sass/_common.scss */
 .services__item_info {
   overflow: hidden;
   line-height: 1.4;
   margin-top: 5px;
 }
-/* line 1489, ../sass/_common.scss */
+/* line 1492, ../sass/_common.scss */
 .services__item_info_headline {
   text-transform: uppercase;
   font-size: 18px;
 }
-/* line 1494, ../sass/_common.scss */
+/* line 1497, ../sass/_common.scss */
 .services__item_info_subheadline {
   color: #8c8c8c;
   font-size: 14px;
 }
-/* line 1500, ../sass/_common.scss */
+/* line 1503, ../sass/_common.scss */
 .services__item:not(:first-child) {
   border-left: 1px solid #e4e5e7;
 }
 
-/* line 1508, ../sass/_common.scss */
+/* line 1511, ../sass/_common.scss */
 .pre-footer-wrap {
   margin-bottom: 40px;
 }
 
-/* line 1512, ../sass/_common.scss */
+/* line 1515, ../sass/_common.scss */
 .pre-footer {
   background: #524354;
   padding: 25px;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 1516, ../sass/_common.scss */
+/* line 1519, ../sass/_common.scss */
 .pre-footer__subscribe {
   float: left;
   width: 67%;
   padding-right: 10px;
 }
-/* line 1520, ../sass/_common.scss */
+/* line 1523, ../sass/_common.scss */
 .pre-footer__subscribe .fa {
   float: left;
   font-size: 35px;
   padding-right: 13px;
   color: #fff;
 }
-/* line 1526, ../sass/_common.scss */
+/* line 1529, ../sass/_common.scss */
 .pre-footer__subscribe_text {
   float: left;
   margin-right: 20px;
   color: #fff;
 }
-/* line 1530, ../sass/_common.scss */
+/* line 1533, ../sass/_common.scss */
 .pre-footer__subscribe_text span {
   display: block;
 }
-/* line 1533, ../sass/_common.scss */
+/* line 1536, ../sass/_common.scss */
 .pre-footer__subscribe_text_headline {
   text-transform: uppercase;
   font-size: 18px;
 }
-/* line 1537, ../sass/_common.scss */
+/* line 1540, ../sass/_common.scss */
 .pre-footer__subscribe_text_subheadline {
   font-size: 13px;
 }
-/* line 1541, ../sass/_common.scss */
+/* line 1544, ../sass/_common.scss */
 .pre-footer__subscribe_form {
   width: 60%;
   float: left;
   position: relative;
 }
-/* line 1545, ../sass/_common.scss */
+/* line 1548, ../sass/_common.scss */
 .pre-footer__subscribe_form_input {
   padding: 0 110px;
   height: 40px;
@@ -1996,11 +1999,11 @@ label {
   background: #fff;
   width: 100%;
 }
-/* line 1552, ../sass/_common.scss */
+/* line 1555, ../sass/_common.scss */
 .pre-footer__subscribe_form_input:focus {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
 }
-/* line 1556, ../sass/_common.scss */
+/* line 1559, ../sass/_common.scss */
 .pre-footer__subscribe_form_submit {
   position: absolute;
   right: 0;
@@ -2012,25 +2015,25 @@ label {
   text-transform: uppercase;
   color: #fff;
 }
-/* line 1569, ../sass/_common.scss */
+/* line 1572, ../sass/_common.scss */
 .pre-footer__share {
   width: 33%;
   float: left;
   color: #fff;
 }
-/* line 1574, ../sass/_common.scss */
+/* line 1577, ../sass/_common.scss */
 .pre-footer__share_text {
   padding-right: 20px;
   line-height: 42px;
   text-transform: uppercase;
   float: left;
 }
-/* line 1580, ../sass/_common.scss */
+/* line 1583, ../sass/_common.scss */
 .pre-footer__share_icons {
   float: right;
   margin-top: 5px;
 }
-/* line 1583, ../sass/_common.scss */
+/* line 1586, ../sass/_common.scss */
 .pre-footer__share_icons_link {
   width: 35px;
   height: 35px;
@@ -2043,51 +2046,51 @@ label {
   text-align: center;
   font-size: 20px;
 }
-/* line 1595, ../sass/_common.scss */
+/* line 1598, ../sass/_common.scss */
 .pre-footer__share_icons_link_facebook:hover {
   background: #346da6;
   color: #fff;
 }
-/* line 1595, ../sass/_common.scss */
+/* line 1598, ../sass/_common.scss */
 .pre-footer__share_icons_link_twitter:hover {
   background: #4c91d7;
   color: #fff;
 }
-/* line 1595, ../sass/_common.scss */
+/* line 1598, ../sass/_common.scss */
 .pre-footer__share_icons_link_rss:hover {
   background: #f05423;
   color: #fff;
 }
-/* line 1595, ../sass/_common.scss */
+/* line 1598, ../sass/_common.scss */
 .pre-footer__share_icons_link_youtube:hover {
   background: #b61f26;
   color: #fff;
 }
-/* line 1595, ../sass/_common.scss */
+/* line 1598, ../sass/_common.scss */
 .pre-footer__share_icons_link_skype:hover {
   background: #00adf2;
   color: #fff;
 }
 
-/* line 1608, ../sass/_common.scss */
+/* line 1611, ../sass/_common.scss */
 .footer-boxes-wrap {
   padding-bottom: 30px;
 }
 
-/* line 1613, ../sass/_common.scss */
+/* line 1616, ../sass/_common.scss */
 .footer-boxes__item {
   float: left;
   width: 25%;
 }
-/* line 1616, ../sass/_common.scss */
+/* line 1619, ../sass/_common.scss */
 .footer-boxes__item:not(:last-child) {
   padding-right: 20px;
 }
-/* line 1619, ../sass/_common.scss */
+/* line 1622, ../sass/_common.scss */
 .footer-boxes__item:last-child {
   float: right;
 }
-/* line 1622, ../sass/_common.scss */
+/* line 1625, ../sass/_common.scss */
 .footer-boxes__item_headline {
   color: #2e3a47;
   font-size: 14px;
@@ -2096,12 +2099,12 @@ label {
   text-transform: uppercase;
 }
 
-/* line 1632, ../sass/_common.scss */
+/* line 1635, ../sass/_common.scss */
 .footer-box {
   font-size: 13px;
   color: #2e3a47;
 }
-/* line 1636, ../sass/_common.scss */
+/* line 1639, ../sass/_common.scss */
 .footer-box__navigation_link {
   display: block;
   -webkit-transition: all 0.3s;
@@ -2110,7 +2113,7 @@ label {
   text-transform: capitalize;
   margin-bottom: 4px;
 }
-/* line 1641, ../sass/_common.scss */
+/* line 1644, ../sass/_common.scss */
 .footer-box__navigation_link .fa {
   display: inline-block;
   vertical-align: middle;
@@ -2118,58 +2121,58 @@ label {
   margin-right: 5px;
   color: inherit;
 }
-/* line 1648, ../sass/_common.scss */
+/* line 1651, ../sass/_common.scss */
 .footer-box__navigation_link_text {
   vertical-align: middle;
   display: inline-block;
 }
-/* line 1652, ../sass/_common.scss */
+/* line 1655, ../sass/_common.scss */
 .footer-box__navigation_link.isActive, .footer-box__navigation_link:hover {
   color: #7bbd42;
 }
-/* line 1657, ../sass/_common.scss */
+/* line 1660, ../sass/_common.scss */
 .footer-box__information {
   text-align: justify;
 }
 
-/* line 1665, ../sass/_common.scss */
+/* line 1668, ../sass/_common.scss */
 .footer-wrap {
   padding: 30px;
   background: #FCFCFC;
   border-top: 1px solid #E8E9EB;
 }
 
-/* line 1671, ../sass/_common.scss */
+/* line 1674, ../sass/_common.scss */
 .to-top {
   position: absolute;
   left: 0;
   top: 0;
 }
-/* line 1675, ../sass/_common.scss */
+/* line 1678, ../sass/_common.scss */
 .to-top_text {
   vertical-align: middle;
 }
 
-/* line 1680, ../sass/_common.scss */
+/* line 1683, ../sass/_common.scss */
 .footer {
   overflow: hidden;
   *zoom: 1;
   position: relative;
 }
-/* line 1683, ../sass/_common.scss */
+/* line 1686, ../sass/_common.scss */
 .footer a {
   color: #7bbd42;
 }
-/* line 1686, ../sass/_common.scss */
+/* line 1689, ../sass/_common.scss */
 .footer__copy {
   float: left;
   padding-top: 25px;
 }
-/* line 1690, ../sass/_common.scss */
+/* line 1693, ../sass/_common.scss */
 .footer__copy_text:not(:last-child) {
   margin-bottom: 5px;
 }
-/* line 1694, ../sass/_common.scss */
+/* line 1697, ../sass/_common.scss */
 .footer__payments {
   float: right;
   background: url("../img/payments.png") center right no-repeat;

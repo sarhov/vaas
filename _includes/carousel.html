@@ -9,16 +9,44 @@
         <!-- carusels__box_title -->
         <dd class="carousels__box_item jsCarouselTabContent" data-name="carousel_tab_{{i}}">
          <section class="carousel-content">
+         <div id="prcar_{{include.type}}_{{i}}">
            {% for i in (1..4) %}
           
             <article class="carousel-content__item"> 
-                {% include product-block.html type="carousel" %}
+                {% include product-block.html type="carousel" %}           {% include quick-view.html %}
             </article>
              <!-- carousel-content__item -->
 
-           {% include quick-view.html %}
+
       
          {% endfor %}
+        </div>  
+        <script>
+
+            $('#prcar_{{include.type}}_{{i}}').carouFredSel({
+   
+   align: 'right',
+   responsive: true,
+   auto: false,
+   items: {
+    visible: 4
+   },
+   scroll: {
+    duration: 1000,
+    items: 1
+
+   },
+   prev : {
+    button : "#thumb_prev_{{}}",
+    key : "left"
+   },
+   next : {
+    button : "#thumb_next{{}}",
+    key: "right"
+   }
+  });
+
+        </script>
        </section>
        <!-- carousel-content -->
        <div class="carousels__box_item_action">
