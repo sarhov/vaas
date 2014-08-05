@@ -2,7 +2,7 @@
   <div class="container">
     <div class="carousels" id="carousel_{{include.id}}">
       <dl class="carousels__box clearfix">
-        {% for i in (1..5) %}
+        {% for i in (1..1) %}
         <dt class="carousels__box_title jsCarouselTabSwitcher" data-href="carousel_tab_{{i}}">
           <button class="carousels__box_title_action">Таб {{i}}</button>
         </dt>
@@ -23,28 +23,28 @@
         </div>  
         <script>
 
-            $('#prcar_{{include.type}}_{{i}}').carouFredSel({
+  //           $('#prcar_{{include.type}}_{{i}}').carouFredSel({
    
-   align: 'right',
-   responsive: true,
-   auto: false,
-   items: {
-    visible: 4
-   },
-   scroll: {
-    duration: 1000,
-    items: 1
+  //  align: 'center',
+  //  responsive: true,
+  //  auto: false,
+  //  items: {
+  //   visible: 4
+  //  },
+  //  scroll: {
+  //   duration: 1000,
+  //   items: 1
 
-   },
-   prev : {
-    button : "#thumb_prev_{{}}",
-    key : "left"
-   },
-   next : {
-    button : "#thumb_next{{}}",
-    key: "right"
-   }
-  });
+  //  },
+  //  prev : {
+  //   button : "#thumb_prev_{{}}",
+  //   key : "left"
+  //  },
+  //  next : {
+  //   button : "#thumb_next{{}}",
+  //   key: "right"
+  //  }
+  // });
 
         </script>
        </section>
